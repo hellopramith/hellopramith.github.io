@@ -265,7 +265,7 @@ a{
 }
 @media (max-width: 1025px) and (min-height: 600px) {
     .section-about .profile {
-        height: calc( 100vh - 90px );
+        height: calc( 100vh - 90px ) !important;
     }
     .container{
         padding-left: 0;
@@ -281,6 +281,6 @@ a{
 }
 @media (min-width: 1024px) and (min-height: 600px) {
      .section-about .profile {
-        height: calc( 100vh - 130px );
+        height: calc( 100vh - 170px );
     }
 }
