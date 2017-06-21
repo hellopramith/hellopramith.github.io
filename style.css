@@ -270,7 +270,6 @@ a{
     .profile-social {
         position: fixed;
         width: 100%;
-        background-color: black;
     }
     .container{
         padding-left: 0;
@@ -279,5 +278,8 @@ a{
     }
     .section {
         padding-top: 0;
+    }
+    html, body {
+        overflow: hidden;
     }
 }
