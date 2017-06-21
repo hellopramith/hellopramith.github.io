@@ -286,3 +286,6 @@ a{
         background: #efefef;
     }
 }
+.section-about .profile {
+background: red !important;
+}
