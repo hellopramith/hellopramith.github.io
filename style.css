@@ -199,6 +199,10 @@ a{
     border-left-color: #e86767;
 }
 @media (max-width: 992px) {
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .section-box {
         padding: 50px 40px;
     }
@@ -208,10 +212,6 @@ a{
 }
 
 @media (max-width: 767px) {
-    .container{
-        padding-left: 0;
-        padding-right: 0;
-    }
     .section {
         padding-top: 20px;
     }
