@@ -199,7 +199,7 @@ a{
 .profile-preword span:before{
     border-left-color: #e86767;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .container{
         padding-left: 0;
         padding-right: 0;
