@@ -208,6 +208,10 @@ a{
 }
 
 @media (max-width: 767px) {
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .section {
         padding-top: 20px;
     }
@@ -217,7 +221,6 @@ a{
     .section-box {
         padding: 30px 20px;
     }
-
     .section-title {
         font-size: 30px;
     }
@@ -229,10 +232,6 @@ a{
 @media (max-width: 440px){
     body{
         background: #e86767;
-    }
-    .container{
-        padding-left: 0;
-        padding-right: 0;
     }
     .section {
         padding-top: 0;
