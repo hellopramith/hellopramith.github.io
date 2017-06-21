@@ -215,7 +215,6 @@ a{
 }
 
 @media (max-width: 767px) {
-
     .section-about .profile {
         padding: 37px 30px 15px 30px;
     }
@@ -264,8 +263,15 @@ a{
         margin: 0;
     }
 }
-@media (max-width: 800px) && (min-height: 600px) {
+@media (max-width: 1025px) && (min-height: 1025px) {
     .section-about .profile {
         height: calc( 100vh - 90px );
+    }
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .section {
+        padding-top: 0;
     }
 }
