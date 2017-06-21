@@ -284,9 +284,6 @@ a{
     .section {
         padding-top: 0;
     }
-    html, body {
-        overflow: hidden;
-    }
 }
 @media (min-width: 1024px) and (min-height: 600px) {
      .section-about .profile {
