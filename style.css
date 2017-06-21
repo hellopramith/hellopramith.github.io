@@ -267,6 +267,10 @@ a{
     .section-about .profile {
         height: calc( 100vh - 90px );
     }
+    .profile-social {
+        position: absolute;
+        width: 100%;
+    }
     .container{
         padding-left: 0;
         padding-right: 0;
