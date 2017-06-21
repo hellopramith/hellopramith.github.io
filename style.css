@@ -277,6 +277,7 @@ a{
     }
     html, body {
         overflow: hidden;
+        background: #e86767;
     }
 }
 @media (min-width: 1024px) and (min-height: 600px) {
