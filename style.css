@@ -263,7 +263,7 @@ a{
         margin: 0;
     }
 }
-@media (max-width: 1025px) && (min-height: 1025px) {
+@media (max-width: 1025px) && (max-height: 1025px) && (min-height: 590px) {
     .section-about .profile {
         height: calc( 100vh - 90px );
     }
