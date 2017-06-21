@@ -240,9 +240,6 @@ a{
         padding-bottom: 15px;
         margin-bottom: 15px;
     }
-    html, body {
-        overflow: auto !important;
-    }
 }
 @media (max-width: 400px){
     .section-about .profile-title {
@@ -266,7 +263,7 @@ a{
         margin: 0;
     }
 }
-@media (max-width: 1025px) and (min-height: 600px) {
+@media (max-width: 1025px) and (min-height: 600px) && (min-width: 750px) {
     .section-about .profile {
         height: calc( 100vh - 90px ) !important;
     }
