@@ -270,6 +270,7 @@ a{
     .profile-social {
         position: absolute;
         width: 100%;
+        background-color: black;
     }
     .container{
         padding-left: 0;
