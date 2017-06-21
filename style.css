@@ -264,7 +264,7 @@ a{
         margin: 0;
     }
 }
-@media (max-width: 992px) && (min-height: 767px) {
+@media (max-width: 992px) && (min-height: 1024px) {
     .section-about .profile {
         height: 84vh;
     }
