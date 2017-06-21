@@ -213,7 +213,7 @@ a{
 
 @media (max-width: 767px) {
     .section {
-        padding-top: 20px;
+        padding-top: 0;
     }
     .section-about .profile {
         padding: 37px 30px 15px 30px;
@@ -232,9 +232,6 @@ a{
 @media (max-width: 440px){
     body{
         background: #e86767;
-    }
-    .section {
-        padding-top: 0;
     }
     .section-about .profile-title {
         font-size: 32px;
@@ -264,5 +261,10 @@ a{
     }
     .social li{
         margin: 0;
+    }
+}
+@media (max-width: 767px) && (min-height: 767px) {
+    .section-about .profile {
+        height: 84vh;
     }
 }
