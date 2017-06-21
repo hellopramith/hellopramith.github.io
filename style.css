@@ -1,11 +1,9 @@
-html {
-    background: url(bg.jpg) repeat-x 0 0 #e86767;
-}
 body {
     color: #3d4451;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    background-color: #fff;
 }
 html,body{
     min-height: 100%;
@@ -232,6 +230,9 @@ a{
     }
 }
 @media (max-width: 440px){
+    body{
+        background: #e86767;
+    }
     .section-about .profile-title {
         font-size: 32px;
     }
@@ -282,10 +283,7 @@ a{
      .section-about .profile {
         height: calc( 100vh - 170px );
     }
-    html{
-        background: #efefef;
+    body{
+        background-color: #efefef;
     }
-}
-.section-about .profile {
-background: red !important;
 }
