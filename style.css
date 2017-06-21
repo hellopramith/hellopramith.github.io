@@ -3,7 +3,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #efefef;
+    background: url(bg.jpg) repeat-x 0 0 #e86767;
 }
 html,body{
     min-height: 100%;
@@ -283,5 +283,8 @@ a{
 @media (min-width: 1024px) and (min-height: 600px) {
      .section-about .profile {
         height: calc( 100vh - 170px );
+    }
+    body{
+        background: #efefef;
     }
 }
