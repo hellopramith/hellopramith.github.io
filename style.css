@@ -268,8 +268,9 @@ a{
         height: calc( 100vh - 90px );
     }
     .profile-social {
-        position: fixed;
+        /*position: fixed;*/
         width: 100%;
+        background-color: black;
     }
     .container{
         padding-left: 0;
