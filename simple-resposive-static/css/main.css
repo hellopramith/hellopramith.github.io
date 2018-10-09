@@ -6,50 +6,6 @@
 	font: inherit;
 	vertical-align: baseline;
 }
-header{
-    clear: both;
-	min-height: 110px;
-	margin: 0 3%;
-	position: relative;
-}
-header h1{
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 120px;
-	height: 75px;
-	background: #F4ED48;
-	text-align: center;
-	margin-left: 10px;
-}
-header h1 a{
-	top:50%;
-    left:50%;
-    position:absolute;
-	-webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-	cursor: pointer;
-}
-header nav{
-	position: absolute;
-	bottom: 7px;
-	right: 0;
-	text-align: right;
-	display: none;
-}
-header nav a {
-	display: inline-block;
-	margin: 0 8px;
-	padding: 0 2px;
-	cursor: pointer;
-	border-bottom: 5px solid #fff;
-}
-header nav a:hover {
-	border-bottom: 3px solid #F4ED48;
-}
 section{
     clear: both;
 	padding: 25px 3%;
@@ -61,7 +17,7 @@ section:after{
 }
 .box{
     float: left;
-    width: calc( 100% -20px ) ;
+    width: calc( 100% - 0px ) ;
 	box-sizing: border-box;
 	margin: 10px;
 	background: #eee;
@@ -87,23 +43,20 @@ section:after{
 	padding: 12px;
 }
 .box.size-l{
-	width: calc( 100% - 20px );
+	width: calc( 100% - 0px );
 }
 .box.size-m{
-	width: calc( 100% - 20px );
+	width: calc( 100% - 0px );
 }
 .box.size-s{
-	width: calc( 50% - 20px );
+	width: calc( 50% - 0px );
 }
 @media screen and (min-width: 745px) {
-	header nav{
-		display: block;
-	}
 	.box.size-m{
-		width: calc( 50% - 20px );
+		width: calc( 50% - 0px );
 	}
 	.box.size-s{
-		width: calc( 25% - 20px );
+		width: calc( 25% - 0px );
 	}
 	.box.size-l .content{
 		padding: 70px;
@@ -171,11 +124,6 @@ section:after{
 }
 .box.size-l.auto-height .content{
 	position: static;
-}
-footer{
-	padding: 30px calc( 3% + 10px );
-	background: #eee;
-	text-align: right;
 }
 
 @font-face {
