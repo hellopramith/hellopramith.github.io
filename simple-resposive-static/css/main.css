@@ -19,7 +19,7 @@ section:after{
     float: left;
     width: calc( 100% - 0px ) ;
 	box-sizing: border-box;
-	margin: 10px;
+	margin: 0;
 	background: #eee;
 	position: relative;
 }
