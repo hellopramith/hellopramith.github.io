@@ -195,6 +195,8 @@ a{
 }
 .social li a.resume:after {
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAABMUlEQVR4Ae3SMS4AQBhE4dUA0AKoHBCooFWrwAkA9AA0wDU0AABPqYR/mWwy7wTzJZOcc86570QHfWxySbQxxfh65nknkJRAFUcEkhOYIJCcQAuvUDCBEeIpCRzkmisicE6WUhIRuM8FiBPkgDhBDogT5IA4QQoQEHjID4gT5IA4QQ6IE+SAOEEMiBMEAAGBx/yAOEEPiBP0gDhBDIgTBAABgadcgN8RCgF8EooFfBKKAHyfIAbEiwOeUWaAAQYY8GKAAQaUDXg1wAADyga8ocwAAwww4N0AAwwoG/DbDDDAAAMMMMAAA6hAnAEGGBCMa5RdxwGnKDuLA8ZRNh4H9PCGqjc6UzxmUTWVckQtZyg6oyrliSbWeOc/e2eR+pQzuhlimyv+uks26P/e951zzrkPT86TAsNXRbsAAAAASUVORK5CYII=') no-repeat center center;
+    background-size: contain;
+    width: 24px;
 }
 .profile-social,.profile-preword span{
     background-color: #e86767;
