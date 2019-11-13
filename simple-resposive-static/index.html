@@ -23,7 +23,7 @@
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
           center: locationRio,
-          gestureHandling: 'cooperative'
+          gestureHandling: 'greedy'
         });
         var marker = new google.maps.Marker({
           position: locationRio,
