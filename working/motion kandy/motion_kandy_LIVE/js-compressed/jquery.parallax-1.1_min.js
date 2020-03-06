@@ -1,0 +1,3 @@
+function RepositionNav(){var c=$(window).height(),e=$("#nav").height()/2,c=c/2-e;$("#nav").css({top:c})}
+(function(c){c.fn.parallax=function(e,f,g,h){function k(a,b){i.css({backgroundPosition:e+" "+Math.round(-(b+a-f)*g)+"px"})}var l=c(window),j=c(window).height();l.scrollTop();var i=c(this);null==e&&(e="50%");null==f&&(f=0);null==g&&(g=0.1);null==h&&(h=!0);height=i.height();i.css({backgroundPosition:e+" "+Math.round(NaN*-(h+f-g))+"px"});l.bind("scroll",function(){var a=l.scrollTop();i.each(function(){var b=c(this),d=b.offset().top,b=!0==h?b.outerHeight(!0):b.height();d+b>=a&&d+b-j<a&&k(a,b);d<=a&&(d+
+b>=a&&d-j<a&&d+b-j>a)&&k(a,b);d+b>a&&(d-j<a&&d>a)&&k(a,b)});c("#pixels").html(a)})}})(jQuery);

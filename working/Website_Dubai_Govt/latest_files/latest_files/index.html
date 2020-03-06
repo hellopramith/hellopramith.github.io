@@ -1,0 +1,980 @@
+<!DOCTYPE html><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>انجازات صاحب السمو الشيخ محمد بن راشد آل مكتوم </title>
+<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="js/jpreLoader.js"></script>
+<script src="js/jquery.parallax-1.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.scrollTo-1.4.3.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.scrollorama.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.scrolldeck.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.mousewheel.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.inview.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.spritely-0.6.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+<link rel="stylesheet" href="imageflow.css" type="text/css" />
+<script type="text/javascript" src="imageflow.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="flowplayer-3.2.11.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+<style type="text/css">
+#preloader{
+	background:#276ea9;
+	position:fixed;
+	z-index:98999;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+	#preloader #jpreLoader{
+		width:94px;
+		height: 228px;
+		margin:0 auto 0;
+	}
+#loaderFrame{
+	background:url(images/loaderfme.png) no-repeat 0 0;
+	width:94px;
+	height:227px;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:99;
+}
+#loaderinner{
+	background:#175888;
+	width:94px;
+	height:227px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	z-index:90;
+	
+}
+	#jpreBar{
+		position:absolute;
+		bottom:0;
+		width:94px;
+		height:0%;
+		z-index:95;
+		background:#fff;	
+	}
+#jprePercentage{
+color: #FFFFFF;
+    height: 38px;
+    position: absolute;
+    text-align: center;
+    top: 233px;
+    width: 94px;
+	 font-size: 16px;
+	 text-shadow: 3px 4px 2px #10436f !important;	
+}
+ #bird {
+		background: transparent url(images/falcon_seq.png) 0 0 no-repeat;
+		position: absolute;
+		top: 0 !important;
+		left: 0px;
+		width: 192px;
+		height: 108px;
+		z-index: 2000;
+		cursor: pointer;
+		overflow:auto;
+}
+.bg-container{
+		position:absolute;
+		bottom:0;
+		left:0;
+		width:100%;
+		height: 642px;
+	  }
+	  .timeline-container{
+		height:566px;
+		width:1182px;
+		margin:0 auto;
+		position:relative;
+	  }
+</style>
+
+<script src="js/tagcanvas.js" type="text/javascript"></script>
+
+	<script type="text/javascript" src="js/storyjs-embed.js"></script>
+<link type="text/css" href="css/styles.css" rel="stylesheet">
+</head>
+   <script type="text/javascript" charset="utf-8">
+       
+   function loadResize(){
+	 RepositionNav();
+	 $('.slide1dtRelative,#slide1').css('height',$(window).height());
+	/*$('.slide1').css('height',$(window).height());
+	$('.slide1dtRelative').css('height',$(window).height());*/
+	$('.slide1Cnt').css('margin-top',$(window).height()/2-100)  ;
+	$('#outer').css('left',$(window).width()/2-150)
+	$('#outer').css('top',$(window).height()/2-208)
+	 $('.slide1Full').css('height',$(window).height()+913);
+		 var deck = new $.scrolldeck({
+			buttons: '.navigation1',
+			slides: '.slide',
+			duration: 600,
+			easing: 'linear'
+	  });
+	  
+	  (function($) {
+            $(document).ready(function() {
+				$('a.navigation').click (function () {
+    	  $.scrollTo ($(this).attr('href'), 800);
+  	 });
+				$('#outer').css('left',$(window).width()/2-150)
+				
+	 if($(window).height()>655){		
+	    $('.slide2').height($(window).height())
+	 }
+	if($(window).height()>530){		
+	    $('.imageflowP').css('margin-top',$(window).height()/2-240)
+		// $('.s4title').css('margin-top',$(window).height()/2-200)
+		
+	 } 
+	 
+	 
+	 if($(window).height()>760){		
+	    $('.slide3').css('min-height',$(window).height())
+		$('.slide5').css('min-height',$(window).height())
+	 }
+	 if($(window).height()>800){		
+	    $('.slide4').css('min-height',$(window).height())
+	 }
+	 if($(window).height()>890){		
+	    $('.slide6').css('min-height',$(window).height())
+	 }
+			  if($(window).height()>913){		
+               $('.slide').css('min-height',$(window).height())
+			   $('.slide1,.slide2,.slide3,.slide4,.slide5,.slide6').css('min-height',$(window).height())
+			   $('.slide').css('height','auto')
+			   $('.slide1,.slide2,.slide3,.slide4,.slide5,.slide6').css('height','auto')
+			  }
+			  else{
+				  
+			  }
+                $('#bird')
+                    .sprite({
+                        fps:18, 
+                        no_of_frames: 47,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 1,
+                        on_first_frame: function(obj) {
+                            if (window.console) {
+                                console.log('first frame');
+                            }
+                        },
+                        on_last_frame: function(obj) {
+                            // you could stop the sprite here with, e.g.
+                           // obj.spStop();
+                            if (window.console) {
+                                console.log('last frame');
+                            }
+                        },
+                        on_frame: {
+                            2: function(obj) {
+                                // you could change the 'state' of the
+                                // sprite here with, e.g. obj.spState(2);
+                                if (window.console) {
+                                    console.log('frame 2');
+                                }
+                            }
+                        },
+						rewind: false
+                    })
+                    .spRandom({top: 0, bottom: 0, left:0, right:250})
+                    .isDraggable()
+                    .activeOnClick()
+                    .active();
+             
+             
+                
+             
+                
+            });
+        })(jQuery);
+		 $(document).ready(function() {
+		//$("#outer").animate({ 
+//        left: "+=1000px",
+//      }, 18000, function(){
+//		  $("#outer").fadeOut('slow');
+//		  });
+	  
+	   
+
+	  
+		 });
+
+             
+       
+                
+     $('.Skylinenew').hover(function(){
+		 $('.skylineP').stop().animate({
+			marginLeft:-10 
+		 },1000);
+		 
+		 $('.r_price').stop().animate({
+			right:0 
+		 },1000);
+		 
+		},function(){ 
+		 $('.skylineP').stop().animate({
+			marginLeft:0 
+		 },1000);
+		 $('.r_price').stop().animate({
+			right:17 
+		 },1000);
+	  });        
+	$('.SkylineGlow').hover(function(){
+		 $('.skylineP').stop().animate({
+			marginLeft:-10 
+		 },1000);
+		 $('.r_price').stop().animate({
+			right:0 
+		 },1000);
+		},function(){ 
+		 $('.skylineP').stop().animate({
+			marginLeft:0 
+		 },1000);
+		 $('.r_price').stop().animate({
+			right:17 
+		 },1000);
+	  });  
+     $('.r_price').hover(function(){
+		 $(this).stop().animate({
+			right:0 
+		 },1000);
+		 $('.skylineP').stop().animate({
+			marginLeft:-10 
+		 },1000);
+		},function(){ 
+		 $(this).stop().animate({
+			right:17 
+		 },1000);
+		 $('.skylineP').stop().animate({
+			marginLeft:0 
+		 },1000);
+	  });   
+	  
+	  //$('#nav').localScroll(8000);
+	 /*$('.Skylinenew').hover(function(){
+		$('.Skylinenew').addClass('effectadn');
+		$('.SkylineGlow').addClass('effectadn');
+	},function(){
+		$('.Skylinenew').removeClass('effectadn');
+		$('.skylin2').removeClass('effectadn');
+	});
+	$('.SkylineGlow').hover(function(){
+		$('.Skylinenew').addClass('effectadn');
+		$('.SkylineGlow').addClass('effectadn');
+	},function(){
+		$('.Skylinenew').removeClass('effectadn');
+		$('.SkylineGlow').removeClass('effectadn');
+	});*/
+	 
+	  
+	$('.skylin0').hover(function(){
+		$('.skylin0').addClass('effectad0');
+		$('.skylin1').addClass('effectad1');
+		$('.skylin2').addClass('effectad2');
+	},function(){
+		$('.skylin0').removeClass('effectad0');
+		$('.skylin1').removeClass('effectad1');
+		$('.skylin2').removeClass('effectad2');
+	});
+	$('.skylin1').hover(function(){
+		$('.skylin0').addClass('effectad0');
+		$('.skylin1').addClass('effectad1');
+		$('.skylin2').addClass('effectad2');
+	},function(){
+		$('.skylin0').removeClass('effectad0');
+		$('.skylin1').removeClass('effectad1');
+		$('.skylin2').removeClass('effectad2');
+	});
+	$('.skylin2').hover(function(){
+		$('.skylin0').addClass('effectad0');
+		$('.skylin1').addClass('effectad1');
+		$('.skylin2').addClass('effectad2');
+	},function(){
+		$('.skylin0').removeClass('effectad0');
+		$('.skylin1').removeClass('effectad1');
+		$('.skylin2').removeClass('effectad2');
+	});
+	
+	
+	$(window).scroll(function(){
+		if($('#slide1').hasClass('inview')||$('#slide2').hasClass('inview')){
+			$('.navigation').hide();
+		}
+		else{
+			$('.navigation').show();
+		}
+	});
+	
+	 $(".slide").bind("inview", function (event, visible) {
+		 
+		 
+		 	 
+			if (visible) {
+			$(this).addClass("inview");
+				if($(this).hasClass('slide1')){
+					loadAnimation();
+					//$('.navigation').hide();
+				}
+				else if($(this).hasClass('slide2')){
+					loadAnimation();
+					//$('.navigation').hide();
+				}
+				else{
+					//$('.navigation').show();
+					loadAnimation();
+				}
+				//$(this).css('min-height',$(window).height())
+			} else {
+				$(this).removeClass("inview");
+				loadAnimation()
+			}
+			
+	});
+	  $(function() {
+       // $('.gallery a').lightBox();
+    });
+	   
+   }
+   
+    function playVideo(vid){
+		$('#slider_v1').find('.videoTile').removeClass('playing');
+		$('#slider_v1').find('.videoTile'+vid).addClass('playing');
+		$('.leftVideoDescall').hide();
+		$('#leftVideoDesc'+vid).show();
+			$('.videoIns').hide();
+			$('.videoP').hide();
+			$('#videoP'+vid).show();
+			$('#videop'+vid).show();
+		}
+        function playVideo1(vid1){
+			$('#slider_v2').find('.videoTile').removeClass('playing');
+			$('#slider_v2').find('.videoTile'+vid1).addClass('playing');
+			$('.leftVideoDescall2').hide();
+			$('#leftVideoDesc2'+vid1).show();
+			$('.videoIns2').hide();
+			$('.video1P').hide();
+			$('#video1P'+vid1).show();
+			$('#video1p'+vid1).show();
+		}  
+   function imgpopup(imgid){
+		$('.popupImg').show();
+		$('.popupImgOvr').show();
+		$('.imggall').hide();
+		$('#imgg'+imgid).show();
+		
+		$('.popupImg').css('left',$(window).width()/2-379);
+		$('.popupImg').css('top',$(window).height()/2-187);
+	}
+	function closeImgPopup(){
+		$('.popupImg').hide();
+		$('.popupImgOvr').hide();	
+	}
+	function loadAnimation(){
+		setTimeout(function(){	
+		$('#topim').animate({
+			opacity:0
+		},1700,function(){
+			reloadAnimation();
+		});
+		},1000);
+	}
+	function reloadAnimation(){
+		setTimeout(function(){	
+		$('#topim').animate({
+			opacity:1
+		},1700,function(){
+			loadAnimation();
+		});
+		},1000);
+	}
+   $(document).ready(function(){
+	   
+	$('body').jpreLoader({}, function() {
+		$('.loadingFinishCnt').show();
+		 loadResize();
+		 $('html').niceScroll();
+		 $('.SkylineGlow').css('left',$(window).width()/2-900);
+		 $('.Skylinenew').css('left',$(window).width()/2-900);
+			loadImageFlow();
+		 loadAnimation();
+		 setTimeout(function(){
+		 createStoryJS({
+			type:		'timeline',
+			width:		'1182',
+			height:		'566',
+			source:		'data.json',
+			embed_id:	'timeline',
+			debug:		true,
+			lang:"ar",
+			js:'js/timeline.js'
+		});
+		 },1000);
+		
+		
+		
+		$("#slider_v1").jcarousel({animation: "slow",scroll:1});
+		$("#slider_v2").jcarousel({animation: "slow",scroll:1});
+		
+		
+		});	   
+   });
+
+  $(window).resize(function () { 
+    $('.slide1Cnt').css('margin-top',$(window).height()/2-100);
+ 	$('.slide1dtRelative,#slide1').css('height',$(window).height());
+	$('.slide1Full').css('height',$(window).height()+913);
+	RepositionNav();
+  });
+   window.onload = function() {
+        try {
+          TagCanvas.Start('myCanvas','tags',{
+			  outlineColour:'transparent',
+			outlineThickness:0,
+            reverse: true,
+            depth: 0.1,
+            maxSpeed: 0.05,
+			wheelZoom: false,
+			shadowBlur:0,
+			imageScale:null,
+			minBrightness:0.1,
+			maxBrightness:1,
+			zoomMin:0,
+			imageScale:null,
+          });
+        } catch(e) {
+          // something went wrong, hide the canvas container
+          document.getElementById('myCanvasContainer').style.display = 'none';
+		  document.getElementById('myCanvasContainer').style.display='none';
+		document.getElementsByTagName('canvas')[0].style.border='0';
+        }
+      };  
+	  
+	     
+ </script>
+<body style="background:#276ea9;">
+<div id="preloader" style="z-index:9999">
+<div id="preloaderInner" style="z-index:999">
+ <div id="loaderFrame"></div>
+</div> 
+</div>
+<div class="loadingFinishCnt" style="display:none;">
+<div class="navigation" style="display:none">
+ <ul id="nav">
+  <li><a class="navigation nav1" href="#slide1">
+  <img src="images/white01.png" class="w"><img src="images/black01.png"  style="display:none" class="b"></a>
+  <li><a class="navigation nav2" href="#slide2">
+  <span></span>
+  <img src="images/white02.png"  class="w"><img src="images/black02.png"  style="display:none" class="b"></a>
+  <li><a class="navigation nav3" href="#slide3"><img src="images/white03.png"  class="w"><img src="images/black03.png"  style="display:none" class="b"></a>
+  <li><a class="navigation nav4" href="#slide4"><img src="images/white04.png"  class="w"><img src="images/black04.png"  style="display:none" class="b"></a>
+  <li><a class="navigation nav5" href="#slide5"><img src="images/white05.png"  class="w"><img src="images/black05.png"  style="display:none" class="b"></a>
+  <li><a class="navigation nav6" href="#slide6"><img src="images/white06.png"  class="w"><img src="images/black06.png"  style="display:none" class="b"></a>	
+ </ul> 
+</div>
+
+<div class="slide1 slide" id="slide1" name="slide1">
+<div class="slide1dtRelative">
+<div id="outer" style="position:absolute; width:192px; left:0px; z-index:98998;top:61px"><div id="bird"></div></div>
+<div class="slide1cd">
+ <img src="images/cloudd.png" style="position:absolute;visibility:hidden">
+  <img src="images/cloudd2.png" style="position:absolute;visibility:hidden">
+   <img src="images/cloudd3.png" style="position:absolute;visibility:hidden">
+   <img src="images/sc1bg.jpg" style="position:absolute;visibility:hidden">
+   <div class="cld1 cld1a"> </div>
+  <div class="cld2 cld2a"> </div>
+   <div class="cld3 cld3a"> </div>
+   <div class="cld1"> </div>
+   <div class="cld2"> </div>
+   <div class="cld3"> </div>
+   </div>
+   <div class="r_price animate-build" data-animation="r_price"><img src="images/r_prince.png"></div>
+<!--   <div class="skylin0 animate-build" data-animation="skylin0"><img src="images/sky_line0.png" style="visibility:hidden"></div>
+   <div class="skylin1 animate-build" data-animation="skylin1"><img src="images/sky_line1.png" style="visibility:hidden"></div>
+   <div class="skylin2 animate-build" data-animation="skylin2"><img src="images/sky_line2.png" style="visibility:hidden"></div>
+   <div class="skylin3 animate-build" data-animation="skylin3"><img src="images/sky_line3.png" style="visibility:hidden"></div>-->
+  <div class="skylineP" style="position:absolute;width:100%;bottom:0;"> 
+  <div class="Skylinenew"><img src="images/dubai-normal.png" style="visibility:hidden"></div> 
+  <div class="SkylineGlow" id="topim"><img src="images/dubai-glow.png" style="visibility:hidden"></div> 
+  </div> 
+  <div class="slide1CntAbs"> 
+   <div class="slide1Cnt">
+    <h2  class="s1h1 animate-build" data-animation="s1h1"></h2>
+    <div class="logo"></div>
+    <div class="scrollTxt">انقر هنا لتصفح الموقع</div>
+   </div>
+  </div> 
+ </div> 
+</div>
+
+<div class="slide slide2" id="slide2">
+
+<div style="position:relative;width:100%;height:100%;">
+   <!-- BEGIN Timeline Embed -->
+  <div class="bg-container">
+   	  <h2 class="timelineHdr"></h2>	
+	  <div class="timeline-container">
+		  <div id="timeline">
+		  </div>
+      </div>
+  </div>
+  
+  <!--<script type="text/javascript">
+    $(document).ready(function() {
+		createStoryJS({
+			type:		'timeline',
+			width:		'1182',
+			height:		'566',
+			source:		'data.json',
+			embed_id:	'timeline',
+			debug:		true,
+			lang:"ar",
+			js:'js/timeline.js'
+		});
+	});
+  </script>-->
+  <!-- END Timeline Embed-->
+ </div> 
+</div>
+
+<div class="slide slide3bg" id="slide3">
+<div class="slide3" >
+ <div class="slide3_viCnt">
+  <div class="mainVideo animate-build" data-animation="mainVideo">
+  <div class="videoIns" id="videop1">
+  <iframe width="451" height="273" src="http://www.youtube.com/embed/eSWFgYNyJtY?list=PL4CFDE220583B6427" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="videoIns" id="videop2" style="display:none">
+  <iframe width="451" height="273" src="http://www.youtube.com/embed/SklYNDbel3Q?list=PL4CFDE220583B6427" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="videoIns" id="videop3" style="display:none">
+  <iframe width="451" height="273" src="http://www.youtube.com/embed/tBRmW5WXhpg?list=PL4CFDE220583B6427" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="videoIns" id="videop4" style="display:none">
+  <iframe width="451" height="273" src="http://www.youtube.com/embed/Zz0-myn4ys8?list=PL4CFDE220583B6427" frameborder="0" allowfullscreen></iframe>
+  </div>
+  </div>
+  <div class="leftVideoDesc animate-build" data-animation="leftVideoDesc">
+      <div class="leftVideoDescall" id="leftVideoDesc1">
+       <h2 class="data1">خليفة يستقبل محمد بن راشد</h2>
+       <div class="data2">28 Jan 2013</div>
+       <div class="data3">5,834</div>
+       <div class="data4">News & Politics</div>
+       <div class="data5">الاثنين 28 يناير 2013 - رعى صاحب السمو الشيخ محمد بن راشد آل مكتوم، نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله" حفل تخريج الدورة الـ 37 من المرشحين الضباط في كلية زايد الثاني العسكرية في مدينة العين. وبُدأ الاحتفال لدى وصول سموه إلى مقر الكلية، بالسلام الوطني، ثم قام سموه بالتفتيش على طابور الخريجين، الذين اصطفوا في ميدان الاحتفال في الكلية، بعدها تليت آيات من الذكر الحكيم. وأدى الخريجون القسم أمام صاحب السمو الشيخ محمد بن راشد آل مكتوم راعي الحفل والحضور.</div>
+      </div> 
+      <div class="leftVideoDescall" id="leftVideoDesc2" style="display:none">
+       <h2 class="data1">محمد بن راشد يرأس وفد الدولة في القمة الاقتصادية</h2>
+       <div class="data2">21 Jan 2013</div>
+       <div class="data3">1,017</div>
+       <div class="data4">News & Politics</div>
+       <div class="data5">الاثنين 21 يناير 2013 - ترأس صاحب السمو الشيخ محمد بن راشد آل مكتوم، نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، وفد الدولة، في افتتاح أعمال القمة العربية التنموية الاقتصادية والاجتماعية الثالثة، التي انطلقت في قاعة الملك عبدالعزيز للمؤتمرات الدولية في الرياض، والتي يرأس جلساتها الأمير سلمان بن عبدالعزيز آل سعود، ولي العهد نائب رئيس مجلس الوزراء وزير الدفاع بالمملكة العربية السعودية. وتناقش القمة على مدى يومين عدداً من القضايا الاقتصادية والاجتماعية التي تهم المواطن العربي، وأهمها البطالة والرعاية الصحية واستكمال إجراءات تنفيذ إنشاء السوق العربية الاقتصادية الموحدة.</div>
+      </div> 
+      <div class="leftVideoDescall" id="leftVideoDesc3" style="display:none">
+       <h2 class="data1">محمد بن راشد يشهد افتتاح قمتي "طاقة المستقبل" و"المياه"</h2>
+       <div class="data2">15 Jan 2013</div>
+       <div class="data3">892</div>
+       <div class="data4">News & Politics</div>
+       <div class="data5">الثلاثاء 15 يناير 2013 - بحضور صاحب السمو الشيخ محمد بن راشد آل مكتوم، نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي " رعاه الله"، افتتح الفريق أول سمو الشيخ محمد بن زايد آل نهيان، ولي عهد أبوظبي نائب القائد الأعلى للقوات المسلحة، "أسبوع أبوظبي للاستدامة 2013" و"القمة العالمية لطاقة المستقبل" و"القمة العالمية للمياه" و"المؤتمر الدولي للطاقة المتجددة"، التي تستضيفها شركة "مصدر"، في مركز أبوظبي الوطني للمعارض، خلال الفترة من 15 حتى 17 من شهر يناير الجاري.</div>
+      </div> 
+      <div class="leftVideoDescall" id="leftVideoDesc4" style="display:none">
+       <h2 class="data1">محمد بن راشد يترأس اجتماع مجلس الوزراء</h2>
+       <div class="data2">13 Jan 2013</div>
+       <div class="data3">371</div>
+       <div class="data4">News & Politics</div>
+       <div class="data5">الثلاثاء 15 يناير 2013 - بحضور صاحب السمو الشيخ محمد بن راشد آل مكتوم، نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي " رعاه الله"، افتتح الفريق أول سمو الشيخ محمد بن زايد آل نهيان، ولي عهد أبوظبي نائب القائد الأعلى للقوات المسلحة، "أسبوع أبوظبي للاستدامة 2013" و"القمة العالمية لطاقة المستقبل" و"القمة العالمية للمياه" و"المؤتمر الدولي للطاقة المتجددة"، التي تستضيفها شركة "مصدر"، في مركز أبوظبي الوطني للمعارض، خلال الفترة من 15 حتى 17 من شهر يناير الجاري.</div>
+      </div> 
+  </div>
+
+  <!--<div class="videoTitle animate-build" data-animation="videoTitlemain">
+  <span id="videoP1" class="videoP">
+   خليفة يستقبل محمد بن راشد
+  </span> 
+  <span id="videoP2" class="videoP"  style="display:none">
+   محمد بن راشد يرأس وفد الدولة في القمة الاقتصادية
+  </span> 
+  <span id="videoP3" class="videoP" style="display:none">
+  محمد بن راشد يشهد افتتاح قمتي "طاقة المستقبل" و"المياه"
+  </span> 
+  <span id="videoP4" class="videoP" style="display:none">
+  محمد بن راشد يترأس اجتماع مجلس الوزراء
+  </span> 
+  </div>-->
+  <div class="videoTileBtm animate-build" data-animation="videoTileb">
+   <ul id="slider_v1">
+   <li>
+   <div class="videoTile videoTile1 playing">
+   	<div class="videoTileFrame">
+      <div class="videoTileFrameBorder">
+      <img src="images/v1.jpg" >
+      	<a href="javascript:playVideo(1)" class="playBtn"></a>
+      </div>
+    </div>
+    <div class="videoTileTitle">
+   خليفة يستقبل محمد بن راشد
+    </div>
+   </div>
+   </li>
+   <li>
+   <div class="videoTile videoTile2 animate-build" data-animation="videoTile2">
+    <div class="videoTileFrame">
+      <div class="videoTileFrameBorder">
+      <img src="images/v2.jpg" >
+       <a href="javascript:playVideo(2)" class="playBtn"></a>
+      </div>
+    </div>
+    <div class="videoTileTitle">
+    محمد بن راشد يرأس وفد الدولة في القمة الاقتصادية
+    </div>
+   </div>
+   </li>
+   <li>
+   <div class="videoTile videoTile3 animate-build" data-animation="videoTile3">
+    <div class="videoTileFrame">
+      <div class="videoTileFrameBorder">
+      <img src="images/v3.jpg" >
+       <a href="javascript:playVideo(3)" class="playBtn"></a>
+      </div>
+    </div>
+    <div class="videoTileTitle">
+    محمد بن راشد يشهد افتتاح قمتي "طاقة المستقبل" و"المياه"
+    </div>
+   </div>
+   </li>
+   <li>
+   <div class="videoTile videoTile4 animate-build" data-animation="videoTile3">
+    <div class="videoTileFrame">
+      <div class="videoTileFrameBorder">
+      <img src="images/v4.jpg" width="158" >
+       <a href="javascript:playVideo(4)" class="playBtn"></a>
+      </div>
+    </div>
+    <div class="videoTileTitle">
+    محمد بن راشد يشهد افتتاح قمتي "طاقة المستقبل" و"المياه"
+    </div>
+   </div>
+   </li>
+   </ul>
+   <div class="videoTiledummy animate-build" data-animation="videoTiledummy"></div>
+  </div>
+ </div>
+</div>
+</div>
+<div class="slide" id="slide4" >
+<div class="slide4" >
+
+ <div class="photoFrmTileParent" style="padding-top: 1px;">
+ <div class="imageflowP">
+  <div class="s4title"></div>
+ <a href="TheGovernmentSummitReview.pdf" target="_blank" style="position:absolute;top:0;left:0;width:615px;height:458px;z-index:99999"></a>  
+	<div id="basic_1" class="imageflow">
+			<img src="img/img1.png" longdesc="img/img1.png"  alt="Image 1" />
+			<img src="img/img2.png" longdesc="img/img2.png"  alt="Image 2" />
+			<img src="img/img3.png" longdesc="img/img3.png"  alt="Image 3" />
+		</div>
+     <a href="TheGovernmentSummitReview.pdf" target="_blank" class="tip"></a>  
+  
+</div>
+    <!--   <div class="photoFrmTile photoFrmTile1  animate-build" data-animation="photoFrmTile1">
+  <div class="photoFrmTileOV">
+   <div class="gallery">
+    <ul>
+        <li>
+       <a href="javascript:imgpopup(1)">
+           <img src="images/m1.jpg" >
+       </a>
+      </li>
+      </ul>
+      </div> 
+  </div>	
+  <div class="photoFrmTileTitle">
+  المجلة رقم٣
+  </div> 
+ </div>
+ <div class="photoFrmTile photoFrmTile2 animate-build" data-animation="photoFrmTile2">
+  <div class="photoFrmTileOV">
+   <div class="gallery">
+    <ul>
+        <li>
+       <a  href="javascript:imgpopup(2)">
+           <img src="images/m2.jpg" >
+       </a>
+      </li>
+      </ul>
+      </div>
+  </div>	
+  <div class="photoFrmTileTitle">
+  المجلة رقم ٢
+  </div> 
+ </div>
+ <div class="photoFrmTile photoFrmTile3 animate-build" data-animation="photoFrmTile3">
+  <div class="photoFrmTileOV">
+   <div class="gallery">
+    <ul>
+        <li>
+       <a  href="javascript:imgpopup(3)">
+           <img src="images/m3.jpg" >
+       </a>
+      </li>
+      </ul>
+      </div>
+  </div>	
+  <div class="photoFrmTileTitle">
+المجلة رقم ١
+  </div> 
+ </div>-->
+ </div>
+ <!--<div class="date2">ديسمبر 2012</div>
+ <div class="photoFrmTileParent">
+ <div class="photoFrmTile photoFrmTile1 animate-build" data-animation="photoFrmTile4">
+  <div class="photoFrmTileOV">
+   <div class="gallery">
+    <ul>
+        <li>
+       <a  href="javascript:imgpopup(4)">
+           <img src="images/m1.jpg" >
+       </a>
+      </li>
+      </ul>
+      </div>
+  </div>	
+  <div class="photoFrmTileTitle">
+المجلة رقم٣
+
+  </div> 
+ </div>
+ <div class="photoFrmTile photoFrmTile2 animate-build" data-animation="photoFrmTile5">
+  <div class="photoFrmTileOV">
+   <div class="gallery">
+    <ul>
+        <li>
+       <a  href="javascript:imgpopup(5)">
+           <img src="images/m2.jpg" >
+       </a>
+      </li>
+      </ul>
+      </div>
+  </div>	
+  <div class="photoFrmTileTitle">
+  المجلة رقم ٢
+  </div> 
+ </div>
+ <div class="photoFrmTile photoFrmTile3 animate-build" data-animation="photoFrmTile6">
+  <div class="photoFrmTileOV">
+   <div class="gallery">
+    <ul>
+        <li>
+       <a  href="javascript:imgpopup(6)">
+           <img src="images/m3.jpg" >
+       </a>
+      </li>
+      </ul>
+      </div>
+  </div>	
+  <div class="photoFrmTileTitle">
+المجلة رقم ١
+  </div> 
+ </div>
+  <div class="videoTiledummy animate-build" data-animation="photoTiledummy"></div>
+
+</div>-->
+ </div>
+</div>
+  <div class="popupImgOvr" style="display:none"></div>
+<div class="popupImg" style="display:none">
+ <a href="javascript:closeImgPopup()" class="closepop"></a>
+ <h2   id="pph21">الشيخ محمد بن راشد آل الشيخ محمد بن راشد آل</h2>
+ <div class="popCnt"></div>
+  <div class="popLeftP">
+  <p id="ppp1">
+  الشيخ محمد بن راشد آل الشيخ محمد بن راشد آل الشيخ محمد بن راشد آل الشيخ محمد بن راشد آل الشيخ محمد بن راشد آل الشيخ محمد بن راشد آل الشيخ محمد بن راشد آل الشيخ محمد بن راشد آل
+  </p>
+  </div>
+  <div class="popRightImg"> 
+   <img src="images/m1.jpg" class="imggall" style="display:none" id="imgg1">
+   <img src="images/m2.jpg" class="imggall"  style="display:none" id="imgg2">
+   <img src="images/m3.jpg" class="imggall"  style="display:none" id="imgg3">
+   <img src="images/m1.jpg" class="imggall"  style="display:none" id="imgg4">
+   <img src="images/m2.jpg" class="imggall"  style="display:none" id="imgg5">
+   <img src="images/m3.jpg" class="imggall"  style="display:none" id="imgg6">
+  </div>
+  <div class="clear"></div>
+ </div>
+<div class="slide" id="slide5">
+<div class="slide5" >
+<h2 class="white_b_txt"></h2>
+ <div class="slide3_viCnt  bg_white_board">
+ 
+  <div class="mainVideo">
+  <div class="videoIns2" id="video1p1">
+  
+ 		 <a  
+			 href="http://pseudo01.hddn.com/vod/demo.flowplayervod/flowplayer-700.flv"
+			 style="display:block;width:457px;height:276px"  
+			 id="player"> 
+		</a> 
+	
+		<!-- this will install flowplayer inside previous A- tag. -->
+		<script>
+			flowplayer("player", "flowplayer-3.2.15.swf", {
+  clip: {
+    autoPlay: false
+  }
+  });
+		</script>
+  <!--<iframe width="457" height="276" src="http://www.youtube.com/embed/eSWFgYNyJtY?list=PL4CFDE220583B6427" frameborder="0" allowfullscreen></iframe>-->
+  </div>
+  <div class="videoIns2" id="video1p2" style="display:none">
+  <iframe width="457" height="276" src="http://www.youtube.com/embed/SklYNDbel3Q?list=PL4CFDE220583B6427" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="videoIns2" id="video1p3" style="display:none">
+  <iframe width="457" height="276" src="http://www.youtube.com/embed/tBRmW5WXhpg?list=PL4CFDE220583B6427" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="videoIns2" id="video1p4" style="display:none">
+  <iframe width="457" height="276" src="http://www.youtube.com/embed/Zz0-myn4ys8?list=PL4CFDE220583B6427" frameborder="0" allowfullscreen></iframe>
+  </div>
+  </div>
+  <div class="leftVideoDesc">
+      <div class="leftVideoDescall2" id="leftVideoDesc21">
+       <h2 class="data1">خليفة يستقبل محمد بن راشد</h2>
+       <div class="data2">28 Jan 2013</div>
+       <div class="data3">5,834</div>
+       <div class="data4">News & Politics</div>
+       <div class="data5">الاثنين 28 يناير 2013 - رعى صاحب السمو الشيخ محمد بن راشد آل مكتوم، نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله" حفل تخريج الدورة الـ 37 من المرشحين الضباط في كلية زايد الثاني العسكرية في مدينة العين. وبُدأ الاحتفال لدى وصول سموه إلى مقر الكلية، بالسلام الوطني، ثم قام سموه بالتفتيش على طابور الخريجين، الذين اصطفوا في ميدان الاحتفال في الكلية، بعدها تليت آيات من الذكر الحكيم. وأدى الخريجون القسم أمام صاحب السمو الشيخ محمد بن راشد آل مكتوم راعي الحفل والحضور.</div>
+      <a href="http://www.youtube.com/watch?feature=player_embedded&v=eSWFgYNyJtY&list=PL4CFDE220583B6427" target="_blank" class="watchuTube"></a>
+      </div> 
+      <div class="leftVideoDescall2" id="leftVideoDesc22" style="display:none">
+       <h2 class="data1">محمد بن راشد يرأس وفد الدولة في القمة الاقتصادية</h2>
+       <div class="data2">21 Jan 2013</div>
+       <div class="data3">1,017</div>
+       <div class="data4">News & Politics</div>
+       <div class="data5">الاثنين 21 يناير 2013 - ترأس صاحب السمو الشيخ محمد بن راشد آل مكتوم، نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، وفد الدولة، في افتتاح أعمال القمة العربية التنموية الاقتصادية والاجتماعية الثالثة، التي انطلقت في قاعة الملك عبدالعزيز للمؤتمرات الدولية في الرياض، والتي يرأس جلساتها الأمير سلمان بن عبدالعزيز آل سعود، ولي العهد نائب رئيس مجلس الوزراء وزير الدفاع بالمملكة العربية السعودية. وتناقش القمة على مدى يومين عدداً من القضايا الاقتصادية والاجتماعية التي تهم المواطن العربي، وأهمها البطالة والرعاية الصحية واستكمال إجراءات تنفيذ إنشاء السوق العربية الاقتصادية الموحدة.</div>
+      <a href="http://www.youtube.com/watch?v=SklYNDbel3Q&feature=player_embedded&list=PL4CFDE220583B6427#at=47" target="_blank" class="watchuTube"></a>
+      </div> 
+      <div class="leftVideoDescall2" id="leftVideoDesc23" style="display:none">
+       <h2 class="data1">محمد بن راشد يشهد افتتاح قمتي "طاقة المستقبل" و"المياه"</h2>
+       <div class="data2">15 Jan 2013</div>
+       <div class="data3">892</div>
+       <div class="data4">News & Politics</div>
+       <div class="data5">الثلاثاء 15 يناير 2013 - بحضور صاحب السمو الشيخ محمد بن راشد آل مكتوم، نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي " رعاه الله"، افتتح الفريق أول سمو الشيخ محمد بن زايد آل نهيان، ولي عهد أبوظبي نائب القائد الأعلى للقوات المسلحة، "أسبوع أبوظبي للاستدامة 2013" و"القمة العالمية لطاقة المستقبل" و"القمة العالمية للمياه" و"المؤتمر الدولي للطاقة المتجددة"، التي تستضيفها شركة "مصدر"، في مركز أبوظبي الوطني للمعارض، خلال الفترة من 15 حتى 17 من شهر يناير الجاري.</div>
+      <a href="http://www.youtube.com/watch?v=tBRmW5WXhpg&feature=player_embedded&list=PL4CFDE220583B6427" target="_blank" class="watchuTube"></a>
+      </div> 
+      <div class="leftVideoDescall2" id="leftVideoDesc24" style="display:none">
+       <h2 class="data1">محمد بن راشد يترأس اجتماع مجلس الوزراء</h2>
+       <div class="data2">13 Jan 2013</div>
+       <div class="data3">371</div>
+       <div class="data4">News & Politics</div>
+       <div class="data5">الثلاثاء 15 يناير 2013 - بحضور صاحب السمو الشيخ محمد بن راشد آل مكتوم، نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي " رعاه الله"، افتتح الفريق أول سمو الشيخ محمد بن زايد آل نهيان، ولي عهد أبوظبي نائب القائد الأعلى للقوات المسلحة، "أسبوع أبوظبي للاستدامة 2013" و"القمة العالمية لطاقة المستقبل" و"القمة العالمية للمياه" و"المؤتمر الدولي للطاقة المتجددة"، التي تستضيفها شركة "مصدر"، في مركز أبوظبي الوطني للمعارض، خلال الفترة من 15 حتى 17 من شهر يناير الجاري.</div>
+     <a href="http://www.youtube.com/watch?v=Zz0-myn4ys8&list=PL4CFDE220583B6427&feature=player_embedded" target="_blank" class="watchuTube"></a>
+      </div> 
+  </div>
+
+  <!--<div class="videoTitle animate-build" data-animation="videoTitlemain">
+  <span id="videoP1" class="videoP">
+   خليفة يستقبل محمد بن راشد
+  </span> 
+  <span id="videoP2" class="videoP"  style="display:none">
+   محمد بن راشد يرأس وفد الدولة في القمة الاقتصادية
+  </span> 
+  <span id="videoP3" class="videoP" style="display:none">
+  محمد بن راشد يشهد افتتاح قمتي "طاقة المستقبل" و"المياه"
+  </span> 
+  <span id="videoP4" class="videoP" style="display:none">
+  محمد بن راشد يترأس اجتماع مجلس الوزراء
+  </span> 
+  </div>-->
+  <div class="videoTileBtm animate-build" data-animation="videoTileb">
+   <ul id="slider_v2">
+   <li>
+   <div class="videoTile videoTile1 playing">
+   	<div class="videoTileFrame">
+      <div class="videoTileFrameBorder">
+      <img src="images/v1.jpg" >
+      	<a href="javascript:playVideo1(1)" class="playBtn"></a>
+      </div>
+    </div>
+    <div class="videoTileTitle">
+   خليفة يستقبل محمد بن راشد
+    </div>
+   </div>
+   </li>
+   <li>
+   <div class="videoTile videoTile2 animate-build" data-animation="videoTile2">
+    <div class="videoTileFrame">
+      <div class="videoTileFrameBorder">
+      <img src="images/v2.jpg" >
+       <a href="javascript:playVideo1(2)" class="playBtn"></a>
+      </div>
+    </div>
+    <div class="videoTileTitle">
+    محمد بن راشد يرأس وفد الدولة في القمة الاقتصادية
+    </div>
+   </div>
+   </li>
+   <li>
+   <div class="videoTile videoTile3 animate-build" data-animation="videoTile3">
+    <div class="videoTileFrame">
+      <div class="videoTileFrameBorder">
+      <img src="images/v3.jpg" >
+       <a href="javascript:playVideo1(3)" class="playBtn"></a>
+      </div>
+    </div>
+    <div class="videoTileTitle">
+    محمد بن راشد يشهد افتتاح قمتي "طاقة المستقبل" و"المياه"
+    </div>
+   </div>
+   </li>
+   <li>
+   <div class="videoTile videoTile4 animate-build" data-animation="videoTile3">
+    <div class="videoTileFrame">
+      <div class="videoTileFrameBorder">
+      <img src="images/v4.jpg" width="158">
+       <a href="javascript:playVideo1(4)" class="playBtn"></a>
+      </div>
+    </div>
+    <div class="videoTileTitle">
+    محمد بن راشد يشهد افتتاح قمتي "طاقة المستقبل" و"المياه"
+    </div>
+   </div>
+   </li>
+   </ul>
+   <div class="videoTiledummy animate-build" data-animation="videoTiledummy"></div>
+  </div>
+ </div>
+</div>
+</div>
+<div class="slide" id="slide6">
+<div class="slide6" >
+<h1 class="lastFrametitl"></h1>
+<div id="myCanvasContainer">
+      <canvas style=" background:transparent" width="1000" height="600" id="myCanvas">
+        <p>Anything in here will be replaced on browsers that support the canvas element</p>
+      </canvas>
+    </div>
+    <div style="display: none;" id="tags">
+      <ul>
+        
+        
+        <li><a href="javascript:void(0)"><img src="images/img3.png"></a></li>
+        <li><a href="javascript:void(0)"><img src="images/img4.png"></a></li>
+        <li><a href="javascript:void(0)"><img src="images/img5.png"></a></li>
+        <li><a href="javascript:void(0)"><img src="images/img1.png"></a></li>
+        <li><a href="javascript:void(0)"><img src="images/img2.png"></a></li>
+        <li><a href="javascript:void(0)"><img src="images/img3.png"></a></li>
+        <li><a href="javascript:void(0)"><img src="images/img4.png"></a></li>
+        <li><a href="javascript:void(0)"><img src="images/img5.png"></a></li>
+        <li><a href="javascript:void(0)"><img src="images/img1.png"></a></li>
+        <li><a href="javascript:void(0)"><img src="images/img2.png"></a></li>
+      </ul>
+    </div>
+
+</div></div>
+</div>
+</body>
+</html>

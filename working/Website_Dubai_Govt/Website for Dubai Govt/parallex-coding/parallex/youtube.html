@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<style>
+
+#gallery {
+	
+	padding:0px;
+	margin:0px;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	width:579px;
+	height:200px;
+	padding-left:15px;
+
+	
+
+	
+}
+
+#gallery img {
+	
+	padding:0px;
+	margin:0px;
+	
+
+}
+#gallery li {
+	
+	
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	border:#fff 6px solid;
+	margin-right:20px;
+	
+	-moz-box-shadow: 0px 5px 5px #888;
+	-webkit-box-shadow: 0px 5px 5px #888;
+	box-shadow: 0px 5px 15px #888;
+	float:left;
+	width:161px;
+	height:98px;
+	
+	
+
+	
+	
+}
+
+#gallery li p {
+	
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	background-color:#FFF;
+	padding:10px;
+	color:#666;
+	display:none;
+	
+
+	
+	
+}
+
+#gallery li:hover p {
+	
+
+	display:block;
+	margin-top:-1px;
+	line-height:12px;
+	
+	
+
+	
+	
+}
+
+
+#video {
+
+-moz-box-shadow: 0px 5px 5px #888;
+-webkit-box-shadow: 0px 5px 5px #888;
+box-shadow: 0px 5px 15px #888;
+		
+	
+}
+
+.style1 {
+	
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:14px;
+	text-align:center;
+	
+	
+	
+	
+}
+
+#video {
+	margin-left:auto;
+	margin-right:auto;
+	width:480px;
+	height:360px;
+	
+
+	
+	
+}
+
+</style>
+
+
+<script language="javascript">
+
+
+
+
+
+
+
+
+function one() {
+
+document.getElementById("frame0").style.display='block';
+document.getElementById("frame2").style.display='none';
+document.getElementById("frame3").style.display='none';
+}
+
+function two() {
+
+document.getElementById("frame0").style.display='none';
+document.getElementById("frame2").style.display='block';
+document.getElementById("frame3").style.display='none';
+}
+
+function three() {
+
+document.getElementById("frame0").style.display='none';
+document.getElementById("frame2").style.display='none';
+document.getElementById("frame3").style.display='block';
+}
+
+
+
+</script>
+
+
+<body onload="javascript:one();">
+
+
+<div id="video">
+
+<iframe style="display:block" id="frame0" width="480" height="360" src="http://www.youtube.com/embed/mfzW0bpzSBE" frameborder="0" allowfullscreen></iframe>
+<iframe style="display:none" id="frame2" width="480" height="360" src="http://www.youtube.com/embed/pzLmeBWhn-4" frameborder="0" allowfullscreen></iframe>
+<iframe style="display:none" id="frame3" width="480" height="360" src="http://www.youtube.com/embed/gec9E5URFIg" frameborder="0" allowfullscreen></iframe>
+
+<p style="text-align:center" class="style1">الشيخ محمد | <a href="#" style="font-size:10px">وثائقي</a></p>
+
+</div>
+
+
+
+<div>
+
+<ul id="gallery">
+
+<li><a href="javascript:one();"><img src="images/image1.jpg" width="161" height="98" /></a>
+<br />
+<p>
+ولم في وأسرت وبداية برلين،
+</p>
+
+</li>
+
+<li><a href="javascript:two();"><img src="images/image2.jpg" width="161" height="98" /></a><br />
+<p>
+ولم في وأسرت وبداية برلين،
+</p>
+
+
+
+
+</li>
+
+<li><a href="javascript:three();"><img src="images/image3.jpg" width="161" height="98" /></a>
+<br />
+<p>
+ولم في وأسرت وبداية برلين،
+</p>
+
+</li>
+
+</ul>
+
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+html,button,input,select,textarea{color:#222}
+body{font-family:calibri, Arial, Helvetica, sans-serif;font-size:15px;line-height:18px;color:#6f6f6f;min-width:1024px;position:relative;background:#fff;overflow-y:scroll}
+img{vertical-align:middle}
+fieldset{border:0;margin:0;padding:0}
+*{outline:none}
+textarea{resize:vertical}
+.chromeframe{background:#ccc;color:#000;margin:.2em 0;padding:.2em 0}
+h1,h2,h3,h4,h5,h6{margin:0}
+.clear{clear:both}
+
+
+@font-face {
+font-family: 'OpenSansSemibold';
+src: url('../fonts/OpenSans-Bold-webfont.eot');
+src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+	 url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+	 url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+	 url('../fonts/OpenSans-Bold-webfont.svg#OpenSansSemibold') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'swz721bc';
+src: url('../fonts/swz721bc-webfont.eot');
+src: url('../fonts/swz721bc-webfont.eot?#iefix') format('embedded-opentype'),
+	 url('../fonts/swz721bc-webfont.woff') format('woff'),
+	 url('../fonts/swz721bc-webfont.ttf') format('truetype'),
+	 url('../fonts/swz721bc-webfont.svg#swz721bc') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'swz721c';
+src: url('../fonts/swz721c-webfont.eot');
+src: url('../fonts/swz721c-webfont.eot?#iefix') format('embedded-opentype'),
+	 url('../fonts/swz721c-webfont.woff') format('woff'),
+	 url('../fonts/swz721c-webfont.ttf') format('truetype'),
+	 url('../fonts/swz721c-webfont.svg#swz721c') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'bebasneue';
+src: url('../fonts/bebasneue-webfont.eot');
+src: url('../fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+	 url('../fonts/bebasneue-webfont.woff') format('woff'),
+	 url('../fonts/bebasneue-webfont.ttf') format('truetype'),
+	 url('../fonts/bebasneue-webfont.svg#bebasneue') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'opensansregular';
+src: url('../fonts/OpenSansRegularwebfont.eot');
+src: url('../fonts/OpenSansRegularwebfont.eot?#iefix') format('embedded-opentype'),
+	 url('../fonts/OpenSansRegularwebfont.woff') format('woff'),
+	 url('../fonts/OpenSansRegularwebfont.ttf') format('truetype'),
+	 url('../fonts/OpenSansRegularwebfont.svg#opensansregular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'dinbekregular';
+src: url('../fonts/dinbek-regular-webfont.eot');
+src: url('../fonts/dinbek-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	 url('../fonts/dinbek-regular-webfont.woff') format('woff'),
+	 url('../fonts/dinbek-regular-webfont.ttf') format('truetype'),
+	 url('../fonts/dinbek-regular-webfont.svg#dinbekregular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'opensanslight';
+src: url('../fonts/opensans-light-webfont.eot');
+src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+	 url('../fonts/opensans-light-webfont.woff') format('woff'),
+	 url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+	 url('../fonts/opensans-light-webfont.svg#opensanslight') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+h1,h2,h3,h4,h5{font-family:opensanslight, "Trebuchet MS", Arial, Helvetica, sans-serif;}
+
+.slide{width:100%;min-width:1024px;height:100%;min-height:500px;position:relative;}
+.header{position:relative;z-index:2;}
+.header .headerLeft{position:absolute;top:18px;left:19px;width:102px;background:#222;}
+.header #logo a{width:102px;height:89px;background:url(../images/logo.jpg) no-repeat 0 0;display:block;text-indent:-99999px;}
+.menu{width:102px;margin: 0;padding: 0 0 0;}
+.menu li a{background:#222;font-size:11px;color:#636363;padding:4px 13px;display: block;text-transform:uppercase;text-decoration:none;font-family:dinbekregular, "Trebuchet MS", Arial, Helvetica, sans-serif}
+.menu li a.active,.menu li a:hover{color:#fffefe;}
+.menuopener {width:102px;height:41px;cursor:pointer;background:#222 url(../images/opener.jpg) no-repeat 12px 13px;display:block;text-indent:-9999px;}
+.menu .menuList{padding:0 0 17px;} 
+.headerRight{position:absolute;right:19px;top:18px;}
+.headerRight .headerRightL{float:left;width:109px;height:113px;overflow:hidden;background:#0cafda;}
+.headerRight .headerRightR{float:right;background:#000;width:89px;height:100px;text-align:center;padding:13px 0 0;}
+.headerRight .headerRightR .projectTitle{color: #808080;font-size: 13px;text-transform: uppercase;line-height: 12px;padding: 0 0 16px;}
+.headerRight .headerRightR .projectCount{font-size:42px;color:#7a7a7a;font-family:OpenSansSemibold , Arial, Helvetica, sans-serif;letter-spacing: -2px;padding: 0 0 16px;line-height: 21px;}
+.projectTitleRelease{font-size:10px;color:#808080;font-family:OpenSansSemibold, Arial, Helvetica, sans-serif;text-transform:uppercase;line-height: 9px;}
+.projectTitleReleaseDate{color:#d1d1d1;font-size:11px;font-family:OpenSansSemibold, Arial, Helvetica, sans-serif;text-transform:uppercase;}
+.headerRightB{padding: 6px 0 0;clear: both;}
+.headerRightB h2{color:#fefefe;font-family:OpenSansSemibold, Arial, Helvetica, sans-serif;font-size:17px;font-weight:normal;text-shadow:0 1px 1px #333;}
+.headerRightB h5{color:#fefefe;font-family:OpenSansSemibold, Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;text-shadow:0 1px 1px #333;}
+
+.homeslider {position:relative;width:100%;height:100%;z-index:0;}
+.homeslider li{position:relative;width:100%;height:100%;float:left;list-style-type:none;}
+.homeslider li.slider-slide1{background:url(../images/banner1.jpg) no-repeat center center;background-size:cover;}
+.homeslider li.slider-slide1 .btmleft-img-slide1{background:url(../images/home_bkg1.png) no-repeat 0 0;width:594px;height:521px;position:absolute;left:0;bottom:0;}
+.homeslider li.slider-slide1 .slide1Txt{position:absolute;left:586px;color:#ffffff;font-family:opensanslight, Arial, Helvetica, sans-serif;font-size:50px;font-weight:normal;line-height:45px;bottom:146px;}
+
+
+.maxWidthwindow{max-width:1024px;margin:0 auto;position:relative;}
+
+.slide2 {min-height:1386px !important;}
+.mhtitle{font-family:bebasneue, Arial, Helvetica, sans-serif;}
+.mhtitle .h1{font-size:50px;font-weight:normal;color:#1c1c1c;line-height: 42px;text-indent: 1px;}
+.mhtitle .h5{font-size:23px;font-weight:normal;letter-spacing: 0.08em;}
+.mhtitle .c1{color:#494848;}
+.mhtitle .c2{color:#333333;line-height: 13px;text-align:right;}
+.slide2 .mhtitle {position:absolute;top:154px;left:0;}
+.imgt1{position:absolute;top:127px;left:243px;background:url(../images/slide2t.png) no-repeat 0 0;width:303px;height:380px;}
+.imgt2{position:absolute;top:377px;left:47px;background:url(../images/slide2iphone_frm.png) no-repeat 0 0;width:226px;height:359px;}
+.imgt3{position:absolute;top:628px;left:129px;background:url(../images/slide2b.png) no-repeat 0 0;width:397px;height:284px;}
+.slideTeamLcnt{width:177px;text-align:right;font-size:29px;text-transform:uppercase;color:#232323;line-height:33px;font-weight:normal;font-family:swz721bc, Arial, Helvetica, sans-serif;position:absolute;top:487px;left:357px;}
+.teancntRight{width:450px;position:absolute;top:400px;left:557px;color:#4f4f4f;font-size:17px;line-height:25px;font-family:opensansregular, Arial, Helvetica, sans-serif;}
+.teancntRight p{padding:0 0 25px;}
+
+
+
+
+.slide3 {min-height:850px !important;}
+.slide3 .mhtitle {position:absolute;top:154px;left:0;}
+.studioProductionIndex{width:185px;border-right:1px solid #414141;padding:147px 0 13px 0;position: absolute;top: 207px;left: 0;}
+.studioProductionIndex ul li{text-align:right;padding:3px 0;}
+.studioProductionIndex ul li a{padding:7px 13px;color:#4b4b4b;text-transform:uppercase;font-weight:normal;font-family:swz721bc, Arial, Helvetica, sans-serif;font-size:16px;text-decoration:none;display:inline-block;cursor:pointer;}
+.studioProductionIndex ul li a.active,.studioProductionIndex ul li a:hover{color:#ffffff;background:#414141;}
+.studioProductionTitle{font-size:29px;text-transform:uppercase;color:#232323;line-height:33px;font-weight:normal;font-family:swz721bc, Arial, Helvetica, sans-serif;padding: 0 0 11px;}
+.studioProductionCnt{position:absolute;top:357px;left:202px;width:560px;}
+.studioProductionCntDesc{color:#4f4f4f;font-size:14px;line-height:25px;font-family:opensansregular, Arial, Helvetica, sans-serif;}
+.studioProductionCntDesc p{padding:0 0 25px;}
+
+
+.slide4 {min-height:915px !important;}
+.slide4 .mhtitle {position:absolute;top:154px;left:0;}
+.slide4 .mhtitle .h5.c2{text-align:left;text-indent:21px;}
+.projectMenuFilter{position:absolute;top:283px;height:424px;padding:0 10px 0 0;border-right:1px solid #464646;}
+.projectMenuFilter .projectMenuFilterList{padding:124px 0 0;}
+.projectMenuFilter .projectMenuFilterList li span{display:block;padding:0 0 10px;color:#909090;}
+.projectMenuFilter .projectMenuFilterList li{padding:1px 0;color:#4b4b4b;text-transform:uppercase;font-weight:normal;font-family:swz721c, Arial, Helvetica, sans-serif;font-size:16px;text-decoration:none;display:block;text-align:right;}
+.projectMenuFilter .projectMenuFilterList li a{margin-right:2px;text-decoration:none;color:#4c4c4c;cursor:pointer;}
+.projectMenuFilter .projectMenuFilterList li a.active,.projectMenuFilter .projectMenuFilterList li a:hover{color:#292929;}
+.projectMenuFilter .projectMenuFilterList li a.active{font-weight:normal;font-family:swz721bc, Arial, Helvetica, sans-serif;}
+.proBottom{position:absolute;bottom:5px;width:100%;text-align:left;}
+.proBottom .proBottomCount{color:#111111;text-transform:uppercase;font-size:50px;line-height:38px;font-family:bebasneue, Arial, Helvetica, sans-serif;font-weight: normal;letter-spacing: 0.02em;}
+.proBottom .proBottomTitle{color:#535353;text-transform:uppercase;font-size:23px;line-height:19px;font-family:bebasneue, Arial, Helvetica, sans-serif;font-weight: normal;letter-spacing: 0.07em;}
+.projectMenuListUL{font-weight:bold;font-family:swz721bc, Arial, Helvetica, sans-serif;font-size:14px;line-height:25px;}
+.projectMenuList{position:absolute;top:283px;left: 92px;height:424px;}
+.projectMenuListUL{padding-top:73px;}
+.projectMenuListUL li{padding:0 0 1px;} 
+.projectMenuListUL li a{color: #323131;padding: 8px 9px 6px;text-transform: uppercase;text-decoration: none;line-height: 13px;display: inline-block;cursor:pointer;font-weight:normal;}
+.projectMenuListUL li a.active,.projectMenuListUL li a:hover{color:#ededed;background:#464646;}
+.projectMenuList .proBottom{margin-left:17px;}
+.ourProjectsCnt{position:absolute;left:319px;top:241px;width:714px;min-height:500px;}
+.ourProjectsCnt .ourProjectsCntGallery{background:url(../images/project_slider.png) no-repeat 0 0;height:290px;width:191px;padding:79px 24px 74px 30px;position:absolute;top:6px;left:47px;}
+.ourProjectsCnt .ourProjectsCntDetails{width:387px;min-height:500px;top:0;right:0;position:absolute;}
+.projectLogoWrapper{height:138px;}
+.projectLogoWrapper .projectLogo{height:133px;width:400px;overflow:hidden;vertical-align: bottom;display: table-cell;}
+.projectLogoWrapper .projectLogo img{max-height:133px;}
+.projectHig{padding: 4px 0 0;}
+.projectHigUl{}
+.projectHigUl li{color: #4f4f4f;font-size: 14px;line-height: 21px;padding: 0 0 2px;font-family: opensansregular, Arial, Helvetica, sans-serif;list-style-type:none;}
+.projectHigUl li span{color:#111111;font-weight:normal;display:inline-block;width:54px;font-family: swz721bc, Arial, Helvetica, sans-serif;font-size:17px;text-transform:uppercase;}
+.proDesc{font-family: opensansregular, Arial, Helvetica, sans-serif;font-size:12px;line-height:16px;padding: 12px 0;color:#4d4d4d}
+.keyFeatures{padding:6px 0 0;clear:both;}
+.keyFeatures h5{color:#111111;font-weight:normal;font-family: swz721bc, Arial, Helvetica, sans-serif;font-size:17px;text-transform:uppercase;padding: 0 0 11px;}
+.keyFeaturesUL{color:#4d4d4d;font-family: opensansregular, Arial, Helvetica, sans-serif;font-size:12px;line-height:16px;list-style-type:none;}
+.keyFeaturesUL li{color: #4d4d4d;background: url(../images/bul.png) no-repeat 0 1px;padding: 0 0 2px 19px;}
+.ourProjectsCnt .ourProjectsCntGallery .easySlider li{height: 290px !important;width: 191px !important;}
+.nextslide a{background:url(../images/arr_next.png) no-repeat 0 0;position:absolute;display:block;width:12px;height:19px;text-indent: -99999px;top:50%;left:203px;}
+.prevslide a{background:url(../images/arr_previous.png) no-repeat 0 0;position:absolute;display:block;width:12px;height:19px;text-indent: -99999px;top:50%;left:33px;}
+
+.clientBG{background:url(../images/client_bg.png) no-repeat 0 bottom;position:absolute;left:0;bottom:0;width:745px;height:354px;}
+
+.slide5{min-height:796px;}
+.slide5 .mhtitle {position:absolute;top:154px;left:0;}
+.clientListing{position:absolute;width:725px;height:628px;bottom:163px;right:81px;}
+.clientListing td{vertical-align:bottom;text-align:center;width:172px;height:120px;}
+.clientListing td .clientlogo{cursor:pointer;}
+.clientListing td .clientname{color:#464646;font-family: opensansregular, Arial, Helvetica, sans-serif;font-size:12px;padding:10px 0 0;}
+
+
+
+.slide6{min-height:796px !important;}
+.slide6 .mhtitle {position:absolute;top:154px;left:0;}
+.contactImg{width:194px;height:393px;background:url(../images/contact_img.jpg) no-repeat 0 0;position:absolute;top:282px;left:79px;}
+.contactForm{min-height:400px;border-left:1px solid #a4a4a4;width:449px;padding:0 0 0 14px;position:absolute;right:0;top:282px;}
+.contactFormUL li{position:relative;padding:3px 10px;border-bottom:1px solid #adadad;margin: 0 0 13px;}
+.contactFormUL li .contactTxt{border:0;width: 427px;} 
+.contactFormUL label{position:absolute;top: 6px;left: 10px;cursor:text;}
+.contactFormUL label,.contactFormUL .contactTxt{color:#626262;font-size:16px;font-family:swz721c, Arial, Helvetica, sans-serif;}
+.contactFormUL li textarea.contactTxt{resize:vertical;min-height:140px;max-height:350px;}
+.contactFormUL li.last{border-bottom:0;}
+.submitBtn{color: #2f2f2f;font-size: 17px;font-family: swz721bc, Arial, Helvetica, sans-serif;font-weight: normal;text-transform: uppercase;background: url(../images/submit_btn.jpg) no-repeat right center;border: 0;padding: 2px 29px 0 2px;margin: -3px 0 0;}
+.contactAddress{width:212px;position:absolute;top:385px;right:476px;text-align:right;}
+.contactAddress h4{color:#464646;font-size: 17px;font-family: swz721bc, Arial, Helvetica, sans-serif;font-weight: normal;text-transform: uppercase;padding: 0 0 12px;line-height: 19px;}
+.contactAddress h1{font-size: 37px;font-family: swz721bc, Arial, Helvetica, sans-serif;font-weight: normal;text-transform: uppercase;color:#2f2f2f;}
+.contactAddress p{color:#616161;font-family: swz721bc, Arial, Helvetica, sans-serif;font-weight: normal;text-transform: uppercase;font-size:15px;padding:44px 0 0;line-height: 19px;}
+.contactThanks{text-align:center;}
+.contactThanks h3{font-size: 24px;font-family: swz721bc, Arial, Helvetica, sans-serif;font-weight: normal;text-transform: uppercase;color: #2f2f2f;padding: 123px 0 0;text-align: center;line-height: 42px;}
+.contactThanks h5{color: #616161;font-family: swz721bc, Arial, Helvetica, sans-serif;font-weight: normal;
+text-transform: uppercase;font-size: 15px;padding: 13px 0 57px;line-height: 19px;}
+.contactThanks a {color: #616161;text-decoration:none;}
+
+.teancntRighttitle{color: #232323;
+    font-family: swz721bc,Arial,Helvetica,sans-serif;
+    font-size: 29px;
+    font-weight: normal;
+    line-height: 33px;
+    padding: 0 0 11px;
+    text-transform: uppercase;}
+.teancntRight h5 {
+	color: #111111;
+	font-weight: normal;
+	font-family: swz721bc, Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	text-transform: uppercase;
+	line-height: 18px;
+    padding: 0 0 3px;
+}
+.teancntRightUL {
+	color: #4d4d4d;
+	font-family: opensansregular, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	list-style-type: none;
+	padding: 10px 0 0;
+}
+.teancntRightUL li {
+    background: url("../images/bul.png") no-repeat scroll 0 0 transparent;
+    color: #4D4D4D;
+    padding: 0 0 13px 19px;
+}

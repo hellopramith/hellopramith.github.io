@@ -1,0 +1,439 @@
+html, button, input, select, textarea {
+	color: #222;
+}
+body {
+	font-family:calibri, Arial, Helvetica, sans-serif;
+	font-size:15px;
+	line-height:18px;
+	color:#6f6f6f;
+	min-width:950px;
+	position:relative;
+	background:#ffffff;
+}
+img {
+	vertical-align: middle;
+}
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+* {
+outline: none;
+}
+textarea {
+	resize: vertical;
+}
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin:  0;
+}
+.clear{clear:both}
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+@font-face {
+font-family: 'calibri';
+src: url('../fonts/calibri.eot');
+src: url('../fonts/calibri.eot?#iefix') format('embedded-opentype'),
+	 url('../fonts/calibri.woff') format('woff'),
+	 url('../fonts/calibri.ttf') format('truetype'),
+	 url('../fonts/calibri.svg#calibri') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'opensanslight';
+src: url('../fonts/opensans-light-webfont.eot');
+src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+	 url('../fonts/opensans-light-webfont.woff') format('woff'),
+	 url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+	 url('../fonts/opensans-light-webfont.svg#opensanslight') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+.clear{
+	clear:both;
+}
+/* ==========================================================================
+   basic custom styles
+   ========================================================================== */
+body{
+	overflow-y:scroll;
+}
+h1,h2,h3,h4,h5{
+	font-family:opensanslight, "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#df3731;
+}
+p,div{
+	font-family:calibri, Arial, Helvetica, sans-serif;
+	color:#6f6f6f;
+}
+.wraperWidth {
+	width:950px;
+	margin:0 auto;
+}
+/* ==========================================================================
+   home
+   ========================================================================== */
+.wrapper{
+	min-width:950px;
+	width:100%;
+}
+.header{
+	background:url(../images/header_bg.jpg) repeat-x 0 bottom #fff;
+	height: 51px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 999;
+}
+.headerCnt_l{
+	width:363px;
+	text-align:right;
+	color:#585858;
+	padding: 16px 0 0;
+	float: left;
+}
+.headerCnt_l a{
+	color:#585858;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-transform:uppercase;
+	font-weight:bold;
+	letter-spacing: -1px;
+}
+.nav{
+	font-family:calibri, Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:15px;
+	text-transform:uppercase;
+}
+.nav{
+	float: right;
+	padding: 0 45px 0 0;
+	overflow: hidden;
+	margin: 0;
+}
+.nav li{
+	float:left;
+	padding: 0 0 0 0;
+}
+.nav li.last{
+	padding-right:0 !important;
+}
+.nav li a{
+	color:#6c6b6b;
+	text-decoration:none;
+	display:block;
+	padding: 16px 12px 15px;
+	border-right:1px solid #e2e2e2;
+	cursor:pointer;
+}
+.nav li.last a {
+	border-right:0 solid #e2e2e2;
+}
+.nav a{
+	color:#6c6b6b;
+}
+.contentFull{
+	background:url(../images/wraper_bg.jpg) repeat-x 0 0 #f9f7e5;
+	padding:29px 0 0;
+	margin-top:51px;
+}
+.allSlides,.headerCnt,.footerCnt{
+	margin:0 auto;
+	width:950px;
+}
+.slide.slide1{
+	background:url(../images/bg_r1.jpg) repeat 0 0;
+	height:596px;
+}
+.slide.slide1 .allSlides .slideContent{
+	position:relative;
+}
+.slide.slide2{
+	border-top:1px solid #d2d2d2;
+}
+.slide.slide2 .allSlides .slideContent{
+	padding:50px 0 49px 32px;
+}
+.slide.slide3 {
+	border-top:1px solid #d2d2d2;
+	background:#f7f7f7;
+}
+.slide.slide3 .allSlides .slideContent{
+	text-align:center;
+	padding:53px 0 38px;
+	font-size:16px;
+	line-height:20px;
+}
+.slide.slide4{
+	background:#fff;
+	border-top:1px solid #d2d2d2;
+}
+.slide.slide5{
+	border-top:1px solid #d2d2d2;
+	background:#f7f7f7;
+}
+.slide.slide4 .allSlides .slideContent{
+	padding:36px 0;
+}
+.slide.slide5 .allSlides .slideContent{
+	padding:39px 0 32px;
+}
+.slide.slide4 .allSlides .slideContent h2{
+	text-align:center;
+	padding:0 0 33px;
+}
+.slideAboutLeft{
+	float:left;
+	width:477px;
+	height:292px;
+	overflow:hidden;
+}
+.slideAboutRight{
+	float:right;
+	width:388px;
+}
+.allSlides h2{
+	font-size:48px;
+	font-weight:normal;
+}
+.slideAboutRight h2{
+	padding: 11px 0 25px;
+}
+.slide.slide3 .allSlides .slideContent h2{
+	padding: 0 0 30px;
+}
+.spacer20{
+	height:20px;	
+}
+.slide.slide5  h2{
+	padding: 0 0 35px 419px;
+}
+.more{
+	background:url(../images/images.png) repeat -287px -1px;
+	width:35px;
+	height:35px;
+	text-indent:-99999px;
+	cursor:pointer;
+	margin: 12px auto 0;
+	display:block;
+}
+.reportBugForm-l{
+	float:left;
+	width:437px;
+}
+.reportBugForm-r{
+	float:right;
+	width:437px;
+}
+.form{
+	
+}
+.form li{
+	padding: 0 0 7px;
+	list-style-type:none;
+	clear:both;
+	float:none;
+}
+.form label{
+	display:block;
+	font-style:italic;
+	color:#868686;
+	padding:0 0 0 2px;
+	font-family:calibri, Arial, Helvetica, sans-serif;
+}
+.red{
+	color:#e40b0c;
+}
+.form .commonText{
+	background:#f7f7f7;
+	border:1px solid #e8e8e8;
+	width:423px;
+	padding:5px;
+	height: 25px;
+	font-family:calibri, Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-style:italic;
+	color:#949494;
+}
+.form textarea.commonText{
+	height:95px;
+	min-height:95px;
+	resize:vertical;
+}
+.form .commonSelect{
+	background:#f7f7f7;
+	border:1px solid #e8e8e8;
+	width:435px;
+	padding:5px;
+	height: 36px;
+	font-family:calibri, Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-style:italic;
+	color:#949494;
+}
+.note{
+	color:#eb1314;
+	font-weight:bold;
+	display:block;
+	padding: 6px 0 0px 2px;
+	font-size: 12px;
+}
+.commonButton{
+	font-size:18px;
+	font-weight:bold;
+	color:#ffffff;
+	font-family:calibri, Arial, Helvetica, sans-serif;
+	background:url(../images/button.jpg) repeat-x 0 0;
+	padding:6px 0;
+	width:119px;
+	text-align:center;
+	border:0;
+	margin: 5px 0 0;
+}
+.captchaBlkText{
+	float:left;
+	width:322px;
+}
+.captchaBlkRefresh{
+	float: left;
+	padding: 6px 0 0 11px;	
+}
+.captchaBlkText .commonText{
+	width:294px !important;
+}
+.contact-l .form .captchaBlkText .commonText{
+	width:248px !important;
+}
+.contact-l .form .captchaBlkText{
+	width:270px !important;
+}
+.captchaBlkImg{
+	float:left;
+}
+.contact-l{
+	float:left;
+	width:534px;
+	border-right:1px solid #dfdfdf;
+}
+.contact-l .form .commonText{
+	background:#eaeaea;
+	width: 433px;
+	border:1px solid #d8d8d8;
+}
+.contact-r{
+	float:right;
+	width:338px;
+	padding:105px 0 0;
+	color:#616161;	
+	font-style:italic;
+	line-height:19px;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.contact-r h4{
+	font-size:20px;
+	padding: 0 0 3px;
+	color:#616161;	
+	font-family:Arial, Helvetica, sans-serif;
+}
+.footer{
+	background:#fff;
+	border-top:1px solid #d2d2d2;
+	padding:42px 0 0;
+}
+.footerShare{
+	text-align:center;
+	padding:0 0 43px;
+	border-bottom:1px solid #d2d2d2;
+}
+.footerShare h4{
+	color:#da0001;
+	font-size:24px;
+	padding:0 0 22px;
+}
+.shareic{
+	display:inline-block;
+	width:56px;
+	height:56px;
+	background:url(../images/images.png) repeat;
+	text-indent:-99999px;
+	margin: 0 7px;
+}
+.shareic.fb{}
+.shareic.tw{background-position:-57px 0;}
+.shareic.bg{background-position:-114px 0;}
+.shareic.gp{background-position:-172px 0;}
+.shareic.yt{background-position:-229px 0;}
+.footerCnt{
+	padding:13px 0 0;
+	height:33px;
+	font-size:11px;
+	color:#616161;
+	text-transform:uppercase;
+}
+.footerCnt a{
+	margin-right:16px;
+	color:#616161;
+	text-decoration:none;
+}
+.footerCnt a:hover{
+	text-decoration:underline;
+}
+.footerCnt span{
+	float:right;
+}
+#slider{
+	padding: 18px 0 0;
+}
+.sliderCont{
+	position: absolute;
+	width: 380px;
+	top: 441px;
+	padding: 0 96px 0 0;
+	right: 0;
+}
+.sliderCont h5{
+	font-size: 48px;
+	font-weight: normal;
+	padding: 0 0 18px 0;
+}
+.sliderCont p{
+	padding: 0 0 0 2px;
+}
+.sliderCont .next{
+	background: url(../images/images.png) repeat;
+	display: block;
+	width: 44px;
+	height: 44px;
+	cursor: pointer;
+	background-position: 0px -58px;
+	position: absolute;
+	right: 30px;
+	top: 21px;
+}
+.textt1{
+	background: url(../images/text_t1.png) no-repeat;	
+	width:243px;
+	height:167px;
+	position:absolute;
+	top:118px;
+	right:119px;
+}
+.downloadapp{
+	background: url(../images/download_app.png) no-repeat;
+	width:152px;
+	height:51px;	
+	position:absolute;
+	top:307px;
+	right:163px;
+}

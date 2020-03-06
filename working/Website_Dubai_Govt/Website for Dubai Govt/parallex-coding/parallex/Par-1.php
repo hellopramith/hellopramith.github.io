@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- (gs)  -->
+  
+  <title></title>
+
+<meta name="description" content="We are a multi-disciplinary brand engagement firm dedicated to connecting customers to brands at the very moments they’re likely to make decisions">     
+   
+   
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/explorer.css" />
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>             
+  <![endif]-->
+
+  
+<link rel="stylesheet" type="text/css" media="screen" href="Par-1_files/00000000006982a6a10fdf25cd942ded921e8277a8.css">
+  
+<link rel="stylesheet" type="text/css" media="screen" href="Par-1_files/global.css">
+    
+<style type="text/css" media="screen">
+      
+        
+        #case_studies #cs_nyu-stern {
+          background-image: url(Par-1_files/firstBG.jpg);
+        }
+		
+        #case_studies #cs_nyu-stern .contentWrapper2 {
+          background-image: url(Par-1_files/sheikh_mohammed.png);
+	
+        }
+     
+        
+        #case_studies #cs_cq_roll_call {
+          background-image: url(Par-1_files/secondBG.jpg);
+		  background-position:left;
+        }
+		
+		
+        #case_studies #cs_cq_roll_call .contentWrapper {
+          background-image: url(http://assets.sullivannyc.com/img/uploads/cs_0002_logo_2.png);
+        }
+        #case_studies #cs_cq_roll_call .abstract {
+          margin-left: 370px;
+		  
+        }
+        
+        #case_studies #cs_human-rights-watch {
+          background-image: url(Par-1_files/third.jpg);
+        }
+        #case_studies #cs_human-rights-watch .contentWrapper {
+          background-image: url();
+        }
+        #case_studies #cs_human-rights-watch .abstract {
+          margin-left: 50px;
+        }
+        
+        #case_studies #cs_discover-ready {
+          background-image: url(Par-1_files/fifth.jpg);
+        }
+        #case_studies #cs_discover-ready .contentWrapper {
+          background-image: url();
+        }
+        #case_studies #cs_discover-ready .abstract {
+          margin-left: 240px;
+        }
+        
+        #case_studies #cs_schwab {
+          background-image: url(Par-1_files/fourth.jpg);
+        }
+        #case_studies #cs_schwab .contentWrapper {
+          background-image: url();
+        }
+        #case_studies #cs_schwab .abstract {
+          margin-left: 340px;
+        }
+        
+		
+		 #bird {
+            background: transparent url(images/bird6.png) 0 0 no-repeat;
+            position: absolute;
+            top: 0px;
+			left:-2000px;
+            width: 150px;
+            height: 150px;
+            z-index: 2000;
+            cursor: pointer;
+			overflow:auto;
+
+
+        }
+      
+	  
+	  	 #bird2 {
+        
+		    background: transparent url(Par-1_files/bird4.png) 0 0 no-repeat;
+            position: absolute;
+            top: -500px;
+			right:-500px;
+            width: 150px;
+            height: 150px;
+            z-index: 2000;
+            cursor: pointer;
+			overflow:auto;
+        
+		}
+		
+		
+		#bird3 {
+        
+		    background: transparent url(images/bird5.png) 0 0 no-repeat;
+            position: absolute;
+            top: 50px;
+            right: -200px;
+            width: 150px;
+            height: 150px;
+            z-index: 2000;
+            cursor: pointer;
+			overflow:auto;
+        
+		}
+		
+		
+		#bird4 {
+        
+		    background: transparent url(images/bird6.png) 0 0 no-repeat;
+            position: absolute;
+            top: 0px;
+            right: -200px;
+            width: 150px;
+            height: 150px;
+            z-index: 2000;
+            cursor: pointer;
+			overflow:auto;
+        
+		}
+      
+	  
+    </style>
+   
+<script type="text/javascript" async src="./Par-1_files/ga.js"></script>
+  
+<script type="text/javascript" src="./Par-1_files/0000000000bf627e802336b06afc05befc32ea2740.js"></script>
+  
+<script type="text/javascript" src="./Par-1_files/global.js"></script>
+  
+<script src="scripts/jquery.spritely-0.6.js" type="text/javascript"></script>
+
+<script src="scripts/swfobject_modified.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+Suli.twitter_user = "";
+
+function started() 
+{
+
+document.getElementById('frame1').height=window.innerHeight;
+	
+}
+
+</script>
+
+
+  <!-- RSS  -->
+</head>
+
+
+<script type="text/javascript">
+
+
+
+
+function moved1( event ) {
+
+
+document.getElementById('frame1').contentWindow.onDocumentMouseMove(event.clientX,event.clientY);
+
+
+	
+}
+
+function loadFrame() {
+
+   	document.addEventListener( 'mousemove',   moved1, false );
+	
+}
+			//	window.addEventListener( 'resize',   window.frames['frame1'].onWindowResize, false );
+		
+		
+		//Suli.init("home");
+	
+
+                        
+
+            $(document).ready(function() {
+				
+				
+				
+				
+				
+				
+				 $('#cs_nav2').animate({
+	 
+    right: (-400) + "px",
+ 
+  }, {
+    duration: 100,
+    specialEasing: {
+      right: 'jswing',
+      top: 'jswing'
+    },
+    complete: function() {
+      
+	
+    }
+  });
+				
+				
+				
+var hid=1;
+var yTop=0;				
+	$(window).scroll(function () {
+		
+
+
+yTop=$(window).scrollTop();
+
+if 	(hid==1) {
+	
+	if (yTop>(window.innerHeight/2)) {
+		
+		hid=2;
+		
+		 $('#cs_nav2').animate({
+	 
+    right: (0) + "px",
+ 
+  }, {
+    duration: 200,
+    specialEasing: {
+      right: 'jswing',
+      top: 'jswing'
+    },
+    complete: function() {
+      
+	
+    }
+  });
+
+
+
+	} 
+	
+
+}
+
+
+
+if (hid==2) {
+
+
+
+
+
+	if (yTop<(window.innerHeight/2)) {	
+
+		
+
+		
+		hid=1;
+		
+		 $('#cs_nav2').animate({
+	 
+    right: (-400) + "px",
+ 
+  }, {
+    duration: 200,
+    specialEasing: {
+      right: 'jswing',
+      top: 'jswing'
+    }
+  });	
+		
+	
+	}
+		
+		
+	}
+
+		
+
+});
+				
+              
+			Suli.init("home");
+          
+                $('#bird')
+                    .sprite({
+                        fps: 11, 
+                        no_of_frames: 60,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 2,
+                     
+                    })
+                    .active()
+					.spChangeDir('left');
+             
+                 $('#bird3')
+                    .sprite({
+                        fps: 11, 
+                        no_of_frames: 60,
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 2,
+                      
+                    })
+                  
+                    .isDraggable()
+                    .activeOnClick()
+                    .active();
+             
+                
+          
+			
+			
+			     $('#bird2')
+                    .sprite({
+                        fps: 11, 
+                        no_of_frames: 60,
+					
+                        // the following are optional: new in version 0.6...
+                        start_at_frame: 2,
+                      
+                    })
+                    .active();
+             
+               
+			   var a = window.innerWidth;
+			   var y1 = window.innerHeight;
+
+
+startBird3();
+
+function startBird3() {	
+  			  
+ $('#bird3').animate({
+
+    right: (a+100) + "px",
+    top: (y1-350) + 'px'
+  }, {
+    duration: 10000,
+    specialEasing: {
+      right: 'jswing',
+      top: 'jswing'
+    },
+    complete: function() {
+   
+   
+  var cssObj = {'top' : (50) + "px", 'right' : (-800) + "px"};
+
+	$('#bird3').css(cssObj);
+     
+	startBird3();
+   
+   
+   
+	  
+    }
+  });
+  
+}
+
+
+     
+startBird2();
+
+function startBird2() {	
+  			  
+$('#bird').animate({
+
+				left: (a) + "px",
+				top: (50) + 'px'
+				
+				}, {
+				  
+				duration: 10000,
+				specialEasing: {
+				  right: 'jswing',
+				  top: 'jswing'
+				  
+				},
+				
+				complete: function() {
+				
+				
+				var cssObj = {'top' : (50) + "px", 'left' : (-1000) + "px"};
+				
+				$('#bird').css(cssObj);
+				 
+				startBird2();
+				  
+				}
+	
+});
+  
+}
+
+startBird();
+			  
+function startBird() {		  
+			  
+ $('#bird2').animate({
+	 
+    right: (a+100) + "px",
+    top: (y1-350) + 'px'
+  }, {
+    duration: 12000,
+    specialEasing: {
+      right: 'jswing',
+      top: 'jswing'
+    },
+    complete: function() {
+		
+		
+	var cssObj = {'top' : (-200) + "px", 'right' : (-500) + "px"};
+
+	$('#bird2').css(cssObj);
+     
+	startBird();
+	//document.getElementById('bird2').style.display="none";
+	//document.getElementById('birdlast').style.display="block";
+	
+	//document.getElementById('birdlast').style.right=a-400 + "px";
+	//document.getElementById('birdlast').style.top=(y1-150) + 'px';
+                    
+                        // the following are optional: new in version 0.6...
+    }
+  });
+  
+  //////////////////////////////////
+  
+
+}
+  
+                
+});
+         
+</script>
+
+
+<body style="overflow-x: hidden;" class="home" onLoad="started()">
+
+
+
+<div style="position:absolute; display:none; background-image:url(images/lastbird.png); background-position:bottom; background-repeat:no-repeat; width:140px; height:140px; z-index:999" id="birdlast">
+
+
+
+</div>
+
+<!-- ClickTale Top part -->
+
+<script type="text/javascript">
+    var WRInitTime=(new Date()).getTime();
+    </script>
+
+<!-- ClickTale end of Top part --><!-- /header.global -->
+
+<section style="overflow:hidden;" id="page">
+
+
+<div id="cs_nav2" style="margin-top: 0px; position: fixed;">
+
+<ul>
+
+
+<li class="case current" style="display:block;"><a href="#cs_nyu-stern">أهداف المبادرة</a> </li>
+
+<li class="case" style="display: list-item;"><a href="#cs_cq_roll_call">مركز الأبحاث الإلكترونية</a></li>
+
+<li class="case" style="display: list-item;"><a href="#cs_human-rights-watch">الأقسام الرئيسية</a></li>
+
+<li class="case" style="display: list-item;"><a href="#cs_discover-ready">المنشورات  والبحوث</a></li>
+
+<li class="case" style="display: list-item;"><a href="#cs_schwab">مؤتمرات حكومية </a></li>
+
+<li class="case" style="display: list-item;"><a href="#cs_schwab">التطوير الحكومي</a></li>
+
+<li class="case" style="display: list-item;"><a href="#cs_schwab">المجلة الحكومية </a></li>
+
+<li class="case" style="display: list-item;"><a href="#cs_schwab">اللوحات البيضاء</a></li>
+
+<li class="case" style="display: list-item;"><a href="#cs_schwab">جائزة صاحب السمو  لتطوير الخدمات</a></li>
+
+<li class="case" style="display: list-item;"><a href="#cs_schwab">قناة يوتيوب</a></li>
+
+
+
+</ul>
+
+</div>
+
+<div id="message" style="margin-top: 0px; display: block;">
+      <div class="contentWrapper">
+      
+      
+      
+      
+        <p><img src="Par-1_files/text.png" width="500" height="59" alt=" "></p>
+      </div>
+    </div><!-- /#message -->
+
+<div id="case_studies" style="height: 3180px; ">
+        
+          <section id="cs_nyu-stern" style="height: 636px; display: block; width: 100%; background-position: 50% -181px; z-index:0;  background-color:transparent; ">
+            
+            <div class="abstract" style="margin-top: 0px; width:100%; height:100%; z-index:20">
+            <div class="contentWrapper2 innerScroll" style="height: 636px; background-position: 50% -181px; position:relative; z-index:1;">
+              
+  
+              </div>
+            </div>
+          
+             
+
+
+       
+       <iframe id="frame1" onload="loadFrame()" class="frame1" style="width:100%; height:100%; position:absolute; top:0px; left:0px; z-index:0; overflow:hidden;"  src="Clouds2.htm"></iframe>
+         
+         
+    
+          
+          
+  
+          
+          </section>
+        
+          <section id="cs_cq_roll_call" style="height: 636px; display: block; width: 100%; background-position: 50% -117px; z-index:1">
+            <div class="contentWrapper innerScroll" style="height: 636px; background-position: 50% -245px;">
+              
+
+
+<div style=" position:absolute; width:900px; height:500px; left:0px; top:50%; margin-top:-300px;">
+
+<object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="900" height="500">
+  <param name="movie" value="swf/swf.swf">
+  <param name="quality" value="high">
+  <param name="wmode" value="transparent">
+  <param name="swfversion" value="6.0.65.0">
+  <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+  <param name="expressinstall" value="scripts/expressInstall.swf">
+  <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+  <!--[if !IE]>-->
+  <object type="application/x-shockwave-flash" data="swf/swf.swf" width="900" height="500">
+    <!--<![endif]-->
+    <param name="quality" value="high">
+    <param name="wmode" value="transparent">
+    <param name="swfversion" value="6.0.65.0">
+    <param name="expressinstall" value="scripts/expressInstall.swf">
+    <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+    <div>
+      <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+    </div>
+    <!--[if !IE]>-->
+  </object>
+  <!--<![endif]-->
+</object>
+
+</div>
+
+      
+
+
+
+
+<div class="abstract" style="margin-top: 50px; margin-left:100px;">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+              
+              
+               
+     
+              
+              
+            </div>
+          </section>
+        
+          <section id="cs_human-rights-watch" style="height: 636px; display: block; width: 100%; background-position: 50% -54px;">
+            <div class="contentWrapper innerScroll" style="height: 636px; background-position: 50% -308px;">
+            
+              <div class="abstract" style="margin-top: 60px;">
+              
+              <?php include 'youtube.html'; ?>
+              
+              
+              </div>
+              
+              
+            </div>
+          </section>
+        
+          <section id="cs_discover-ready" style="height: 636px; display: block; width: 100%; background-position: 50% 10px;">
+            <div class="contentWrapper innerScroll" style="height: 636px; background-position: 50% -372px;">
+              <div class="abstract" style="margin-top: 418px;">
+              
+              
+              
+              </div>
+            </div>
+          </section>
+        
+          <section id="cs_schwab" style="height: 636px; display: block; width: 100%; background-position: 50% 73px;">
+            <div class="contentWrapper innerScroll" style="height: 636px; background-position: 50% -435px;">
+              
+              <div class="abstract" style="margin-top: 418px;">
+              
+              
+              
+              
+              
+              </div>
+            
+            </div>
+          </section>
+          
+  </div>  
+
+</div><!-- /#case_studies --> 
+  
+<aside id="secondary_content">
+    
+    <section id="recent_content" class="clear" style="display: block;">
+  <div class="contentWrapper clear"><!--/#twitter_feed --><!-- /#news_feed -->
+  
+  </div>
+</section><!-- /#recent_content -->                       
+  </aside><!-- /#white_papers -->
+     
+</section>
+
+<!-- /#page --><!-- /footer.global -->
+
+<!-- ClickTale end of Bottom part -->
+
+	<script type="text/javascript">
+swfobject.registerObject("FlashID");
+</script>
+
+</body>
+</html>

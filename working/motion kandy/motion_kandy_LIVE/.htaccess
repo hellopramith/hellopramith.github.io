@@ -1,0 +1,82 @@
+
+AddType video/mp4 .mp4
+AddType video/webm .webm
+AddType video/flv .flv
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/html "access plus 2 days" 
+ExpiresByType image/gif "access plus 60 days"
+ExpiresByType image/jpg "access plus 60 days"
+ExpiresByType image/png "access plus 60 days" 
+ExpiresByType application/x-javascript "access plus 60 days"
+ExpiresByType text/javascript "access plus 60 days"
+ExpiresByType text/css "access plus 60 days"
+ExpiresByType image/x-icon "access plus 360 days"
+</IfModule>
+<IfModule mod_headers.c>
+    <FilesMatch "\.(bmp|css|flv|gif|ico|jpg|jpeg|js|pdf|png|svg|swf|tif|tiff)$">
+        Header set Last-Modified "Mon, 31 Aug 2012 00:00:00 GMT"
+    </FilesMatch>
+</IfModule>
+
+
+## EXPIRES CACHING ##
+<IfModule mod_gzip.c>
+mod_gzip_on Yes
+mod_gzip_dechunk Yes
+mod_gzip_keep_workfiles No
+mod_gzip_can_negotiate Yes
+mod_gzip_add_header_count Yes
+mod_gzip_send_vary Yes
+mod_gzip_command_version '/mod_gzip_status'
+mod_gzip_min_http 1000
+mod_gzip_minimum_file_size 300
+mod_gzip_maximum_file_size 512000
+mod_gzip_maximum_inmem_size 60000
+mod_gzip_handle_methods GET POST
+mod_gzip_temp_dir /tmp
+mod_gzip_item_include file \.html$
+mod_gzip_item_include file \.php$
+mod_gzip_item_include file \.pl$
+mod_gzip_item_include file \.rb$
+mod_gzip_item_include file \.py$
+mod_gzip_item_include file \.cgi$
+mod_gzip_item_include file \.css$
+mod_gzip_item_include file \.js$
+mod_gzip_item_include mime ^application/javascript$
+mod_gzip_item_include mime ^application/x-javascript$
+mod_gzip_item_include mime ^text/.*
+mod_gzip_item_include mime ^httpd/unix-directory$
+mod_gzip_item_include handler ^cgi-script$
+mod_gzip_item_include handler ^server-status$
+mod_gzip_item_include handler ^server-info$
+mod_gzip_item_include handler ^application/x-httpd-php
+mod_gzip_item_exclude mime ^image/.*
+</IfModule>
+
+
+
+
+
+
+
+<IfModule mod_deflate.c>
+SetOutputFilter DEFLATE
+# Don.t compress
+SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
+#Dealing with proxy servers
+<IfModule mod_headers.c>
+Header append Vary User-Agent
+</IfModule>
+</IfModule>
+
+
+<filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|ogv|mp4|webm|swf)$">
+Header set Expires "Thu, 01 Jan 2013 20:00:00 GMT"
+</filesMatch>
