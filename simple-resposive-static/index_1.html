@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var locationRio = {lat: -22.915, lng: -43.197};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          "draggable": true,
+                             "scrollwheel": true,
+                             "zoom": 12,
+                             "minZoom": 4,
+                             "disableDefaultUI": true,
+                             "zoomControl": true,
+                             "streetViewControl": true,
+                             "gestureHandling": 'greedy',
+                             "center": {
+                                 "lat": 0,
+                                 "lng": 0
+                             },
+                             "mapTypeId": "roadmap",
+                             "styles": [
+                                 {
+                                     "featureType": "poi",
+                                     "stylers": [
+                                         {
+                                             "visibility": "off"
+                                         }
+                                     ]
+                                 }
+
+                             ]
+        });
+        var marker = new google.maps.Marker({
+          position: locationRio,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJKXrNSuDxukfPFxOHOBHV4czyGbP6-OQ&callback=initMap">
+    </script>
+  </body>
+</html>
