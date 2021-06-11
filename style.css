@@ -293,3 +293,25 @@ a{
         height: calc( 100vh - 170px );
     }
 }
+
+body.night {
+    background: #090c10;
+    color: #f0f2f8;
+} 
+
+body.night .section-about .section-box {
+    background-color: #0d1117;
+}
+
+body.night .section-about .profile-info {
+    color: #f0f2f8;
+    border-color: #93959c;
+}
+
+body.night .profile-list .title {
+    color: #c2c2c3;
+}
+
+body.night .profile-list .cont {
+    color: #cacbd0;
+}
