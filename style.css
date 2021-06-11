@@ -294,8 +294,12 @@ a{
     }
 }
 
+@media (min-width: 1024px){
+    body.night {
+        background: #090c10;
+    }
+}
 body.night {
-    background: #090c10;
     color: #f0f2f8;
 } 
 
