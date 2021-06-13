@@ -303,11 +303,7 @@ a{
     }
 }
 
-@media (min-width: 1024px){
-    body.night {
-        background: #090c10;
-    }
-}
+
 body.night {
     color: #f0f2f8;
 } 
@@ -327,4 +323,13 @@ body.night .profile-list .title {
 
 body.night .profile-list .cont {
     color: #cacbd0;
+}
+
+@media (min-width: 1024px){
+    .container {
+        max-width: 960px;
+    }
+    body.night {
+        background: #090c10;
+    }
 }
