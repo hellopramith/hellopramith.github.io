@@ -55,7 +55,6 @@ a{
     padding: 0;
     background-color: #fff;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-    min-height: 100vh;
 }
 .section-about .profile {
     padding: 57px 50px 15px 50px;
@@ -210,11 +209,6 @@ a{
 }
 
 @media (max-width: 1024px) {
-    .section-about .profile {
-        min-height: calc( 100% - 90px ) !important;
-        min-height: calc( 100vh - 90px ) !important;
-    }
-
     .container{
         padding-left: 0;
         padding-right: 0;
@@ -297,16 +291,6 @@ a{
         padding-top: 0;
     }
 }
-@media (min-width: 1024px) and (min-height: 600px) {
-     .section-about .profile {
-        height: calc( 100vh - 170px );
-    }
-}
-
-
-body.night {
-    color: #f0f2f8;
-} 
 
 body.night .section-about .section-box {
     background-color: #0d1117;
