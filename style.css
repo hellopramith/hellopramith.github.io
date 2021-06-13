@@ -55,6 +55,7 @@ a{
     padding: 0;
     background-color: #fff;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    min-height: 100vh;
 }
 .section-about .profile {
     padding: 57px 50px 15px 50px;
@@ -202,6 +203,10 @@ a{
 .profile-preword span:before{
     border-left-color: #e86767;
 }
+.section-about .profile {
+    min-height: calc( 100% - 90px ) !important;
+    min-height: calc( 100vh - 90px ) !important;
+}
 @media (max-width: 1024px) {
     .container{
         padding-left: 0;
@@ -277,7 +282,8 @@ a{
 }
 @media (max-width: 1025px) and (min-height: 600px) and (min-width: 750px) {
     .section-about .profile {
-        height: calc( 100vh - 90px ) !important;
+        min-height: calc( 100% - 90px ) !important;
+        min-height: calc( 100vh - 90px ) !important;
     }
     .container{
         padding-left: 0;
