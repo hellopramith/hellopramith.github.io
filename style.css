@@ -208,7 +208,7 @@ a{
     border-left-color: #e86767;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 960px) {
     .container{
         padding-left: 0;
         padding-right: 0;
@@ -281,7 +281,7 @@ a{
         margin: 0;
     }
 }
-@media (max-width: 1025px) and (min-height: 600px) and (min-width: 750px) {
+@media (max-width: 961px) and (min-height: 600px) and (min-width: 750px) {
     .container{
         padding-left: 0;
         padding-right: 0;
@@ -309,7 +309,7 @@ body.night .profile-list .cont {
     color: #cacbd0;
 }
 
-@media (min-width: 1024px){
+@media (min-width: 960px){
     .container {
         max-width: 960px;
     }
