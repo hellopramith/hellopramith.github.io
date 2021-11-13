@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('button').on('click', function(){
+        var requestData = {"sys_id":"b8f6e24a87233c10bf10a60d3fbb3595","work_notes":"test work notes"};
+        $.ajax({
+            type: "GET",
+            url: "https://dev75077.service-now.com/api/now/table/sys_user?&sysparm_fields=name%2Csys_id&email=survey.user@email.com",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify(requestData),
+            crossDomain: true,
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader ("Authorization", "Basic YWRtaW46bVJwM3VlOUxXRHJG")
+            },
+            success: function(response) {
+                $('.status').html('Success');
+                $('.response').html(JSON.stringify(response));
+            }.bind(this),
+            error:  function() {
+                $('.status').html('ERROR');
+                $('.response').html('CORS error');
+            }.bind(this)
+        });
+    });
+});
+</script>
+</head>
+<body>
+<h2>CORS test:</h2>
+<button>Click me </button> to get the api response
+<br><hr>
+<table border="1">
+    <tr>
+        <td>Status:</td>
+        <td width="100"><div class="status"></div></td>
+    </tr>
+    <tr>
+        <td>Response: </td>
+        <td><div class="response"></div></td>
+    </tr>
+</table>
+
+
+</body>
+</html>
+
