@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset=utf-8>
+        <meta http-equiv=X-UA-Compatible content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <title>pramithprakash</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel=icon href="favicon.ico" type="image/x-icon">
+        <link href="/style.css" rel="stylesheet">
+        <link rel='stylesheet' id='Open Sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700&ver=4.6.1' type='text/css' media='all' />
+    </head>
+    <body>
+        <style>
+            body {
+                font-family: "Open Sans";
+            }
+            * {
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            .intro {
+                position: absolute;
+                left: 200px;
+                top: 80px;
+            }
+            .about {
+                position: absolute;
+                left: 600px;
+                top: 100px;
+            }
+            .frame {
+                width: 350px;
+                -moz-box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
+                box-shadow: 0 0 10px 1px rgb(0 0 0 / 10%);
+                transition: box-shadow .6s cubic-bezier(.35,.755,.42,.95),-webkit-transform .6s cubic-bezier(.35,.755,.42,.95);
+                -moz-transition: box-shadow .6s cubic-bezier(.35,.755,.42,.95),transform .6s cubic-bezier(.35,.755,.42,.95),-moz-box-shadow .6s cubic-bezier(.35,.755,.42,.95),-moz-transform .6s cubic-bezier(.35,.755,.42,.95);
+                transition: box-shadow .6s cubic-bezier(.35,.755,.42,.95),transform .6s cubic-bezier(.35,.755,.42,.95);
+                transition: box-shadow .6s cubic-bezier(.35,.755,.42,.95),transform .6s cubic-bezier(.35,.755,.42,.95),-moz-box-shadow .6s cubic-bezier(.35,.755,.42,.95),-webkit-transform .6s cubic-bezier(.35,.755,.42,.95),-moz-transform .6s cubic-bezier(.35,.755,.42,.95);
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                overflow: hidden;
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+                -font-smoothing: antialiased;
+                -webkit-transform: scale(1);
+                -moz-transform: scale(1);
+                transform: scale(1);
+                position: relative;
+                z-index: 1;
+            }
+            .frame-top {
+                display: grid;
+                grid-template-columns: 1fr 4fr 1fr;
+                border-bottom: 1px solid rgba(0,0,0,.1);
+                padding: 0 8px;
+                -webkit-align-items: center;
+                -moz-box-align: center;
+                align-items: center;
+                background: hsla(0,0%,100%,.5);
+                height: 32px;
+                -moz-border-radius: 10px 10px 0 0;
+                border-radius: 10px 10px 0 0;
+            }
+            .frame-top-title {
+                text-align: center;
+                white-space: nowrap;
+                grid-column: 2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 0 8px;
+            }
+            .frame-filled {
+                -webkit-backdrop-filter: blur(6px);
+                backdrop-filter: blur(6px);
+                background: hsla(0,0%,100%,.5);
+            }
+            .intro-inner {
+                padding: 24px;
+            }
+            .intro-content {
+                display: -webkit-flex;
+                display: -moz-box;
+                display: flex;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                flex-direction: column;
+                -webkit-align-items: center;
+                -moz-box-align: center;
+                align-items: center;
+                -webkit-justify-content: center;
+                -moz-box-pack: center;
+                justify-content: center;
+            }
+            .intro-content * {
+                text-align: center;
+            }
+            .intro-avatar {
+                overflow: hidden;
+                -moz-border-radius: 50px;
+                border-radius: 50px;
+                width: 100px;
+                height: 100px;
+                border: 1px solid rgba(0,0,0,.1);
+            }
+            .intro-nametag {
+                margin: 20px 0;
+            }
+            .intro-title {
+                font-size: 24px;
+                font-weight: 700;
+            }
+            .intro-rows {
+                display: -webkit-flex;
+                display: -moz-box;
+                display: flex;
+                -webkit-flex-direction: row;
+                -moz-box-orient: horizontal;
+                -moz-box-direction: normal;
+                flex-direction: row;
+                padding: 8px;
+                margin: 16px 0;
+                width: 100%;
+            }
+            .intro-row-label {
+                -webkit-flex: 0 0 50%;
+                -moz-box-flex: 0;
+                flex: 0 0 50%;
+                color: rgba(52,51,47,.5);
+                width: 50px;
+                padding-right: 12px;
+                text-align: right;
+            }
+            .intro-row-content {
+                text-align: left;
+                -webkit-flex: 0 0 50%;
+                -moz-box-flex: 0;
+                flex: 0 0 50%;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                flex-direction: column;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: flex;
+            }
+            .intro-link {
+                white-space: nowrap;
+                display: inline-block;
+                position: relative;
+            }
+            .intro-arrow {
+                position: absolute;
+                right: 0;
+                transition: -webkit-transform .15s ease-in-out;
+                -moz-transition: transform .15s ease-in-out,-moz-transform .15s ease-in-out;
+                transition: transform .15s ease-in-out;
+                transition: transform .15s ease-in-out,-webkit-transform .15s ease-in-out,-moz-transform .15s ease-in-out;
+                -webkit-transform: translateX(calc(100% + 4px));
+                -moz-transform: translateX(-moz-calc(100% + 4px));
+                transform: translateX(calc(100% + 4px));
+                        }
+            .intro-meta {
+                font-size: 10px;
+                color: rgba(52,51,47,.5);
+            }
+            .gradient {
+                position: absolute;
+                z-index: 0;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+            .about-inner {
+                overflow-y: scroll;
+                padding: 16px;
+                height: 300px;
+            }
+            .about-content h1 {
+                margin-top: 0;
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+            .about-content p {
+                margin: 12px 0;
+            }
+        </style>
+        <div class="intro">
+            <div class="frame">
+                <div class="frame-top">
+                    <div class="frame-top-title">Iam</div>
+                </div>
+                <div class="frame-filled intro-inner">
+                    <div class="intro-content">
+                        <div class="intro-avatar">
+
+                        </div>
+                        <div class="intro-nametag">
+                            <div class="intro-title">Pramith Prakash</div>
+                            <div>UX Designer</div>
+                        </div>
+                        <div>I help growing businesses, agencies, and studios execute design projects by integrating with their team to create forward-thinking digital experiences.</div>
+                        <div class="intro-rows">
+                            <div class="intro-row-label">Capabilities</div>
+                            <div class="intro-row-content">
+                                <div class="intro-link">Interface Design<span class="intro-arrow">→</span></div>
+                                <div class="intro-link">Visual Design<span class="intro-arrow">→</span></div>
+                                <div class="intro-link">Storytelling<span class="intro-arrow">→</span></div>
+                            </div>
+                        </div>
+                        <div class="intro-meta">© 1991-2022 Pramith Prakash. All rights reserved.<br>Site updated 3 days ago.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="frame">
+                <div class="frame-top">
+                    <div class="frame-top-title">Info</div>
+                </div>
+                <div class="frame-filled about-inner">
+                    <div class="about-content">
+                        <h1>I design apps and widgets.</h1>
+                        <p>I’ve designed apps for iOS, Android, and web. My human-centered process and decision making is grounded in qualitative and quantitative research.</p>
+                        <p>I have experience in HTML, CSS, JavaScript, React, Angular, and various libraries that allow me to work efficiently with product and development teams to create a fully integrated app or website.</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gradient"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(".gradient").mousemove(function( event ) {
+            var w = $(this).width(),
+                pct = 360*(+event.pageX)/w,
+                bg = "linear-gradient(" + pct + "deg,#dce2e156,#33c8a156)";
+                $(".gradient").css("background-image", bg);
+            });
+
+            //https://www.alecbabala.com/interfaces
+        </script>
+    </body>
+</html>
